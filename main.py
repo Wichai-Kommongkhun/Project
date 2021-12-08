@@ -41,7 +41,7 @@ def food_page5():
 def menu_1():
     return render_template('food_all/food_menu/menu_1.html')
 
-@app.route("/ต้มจืดไข่ขาว")
+@app.route("/แกงจืดตำลึงหมูสับ")
 def menu_2():
     return render_template('food_all/food_menu/menu_2.html')
 
@@ -53,7 +53,7 @@ def menu_3():
 def menu_4():
     return render_template('food_all/food_menu/menu_4.html')
 
-@app.route("/ก๋วยเตี๋ยวต้มยำไก่")
+@app.route("/ซุบหน่อไม้")
 def menu_5():
     return render_template('food_all/food_menu/menu_5.html')
 
