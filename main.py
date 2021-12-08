@@ -49,11 +49,11 @@ def menu_2():
 def menu_3():
     return render_template('food_all/food_menu/menu_3.html')
 
-@app.route("/กระเพาอกไก่3")
+@app.route("/ก")
 def menu_4():
     return render_template('food_all/food_menu/menu_4.html')
 
-@app.route("/กระเพาอกไก่4")
+@app.route("/ก๋วยเตี๋ยวต้มยำไก่")
 def menu_5():
     return render_template('food_all/food_menu/menu_5.html')
 
