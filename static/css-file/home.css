@@ -116,7 +116,7 @@ nav{
 	flex-wrap: wrap;
     margin-bottom: 20px;
 }
-.flex-col1{
+.flex-col1 {
     background-color: rgb(245, 214, 135);
     width: 100%;
     height: 20%;
@@ -128,11 +128,15 @@ nav{
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
 }
+.homemain {
+    font-size: 20px;
+}
 .img1 {
     display: flex;
     justify-items: center;
     align-items: flex-start;
     margin-left: 100px;
+    max-width: 546px;
 }
 .flex-col2 {
     margin: 20px 0 20px 0;
@@ -182,7 +186,7 @@ nav{
     justify-items: center;
     align-items: flex-start;
     margin-left: 100px;
-    max-width: 700px;
+    max-width: 546px;
 }
 .flex-col4-2 {
     display: flex;
@@ -192,3 +196,83 @@ nav{
     padding-left: 80px;
 }
 
+/*responsive*/
+@media(max-width: 1030px){
+    .homemain {
+        font-size: 15px;
+    }
+    .img1 {
+        max-width: 500px;
+        margin: 0 0 0 0;
+    }
+    .flex-col2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-col2-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 0;
+    }
+    .flex-col3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-col3-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 0;
+    }
+    .img2 {
+        display: flex;
+        justify-items: center;
+        align-items: flex-start;
+    }
+    .flex-col4 {
+        display: flex;
+        flex-direction: column;
+    }
+    .img3 {
+        display: flex;
+        justify-items: center;
+        align-items: flex-start;
+        margin: 0 0 0 0;
+    }
+    .flex-col4-2 {
+        padding: 0 0 0 0;
+    }
+}
+
+@media(max-width: 750px){
+    .homemain {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 500px){
+    .homemain {
+        font-size: 5px;
+    }
+    .img1 {
+        max-width: 300px;
+        margin: 0 0 0 0;
+    }
+    .img2 {
+        max-width: 300px;
+        margin: 0 0 0 0;
+    }
+    .img3 {
+        max-width: 300px;
+        margin: 0 0 0 0;
+    }
+    .head-content {
+        font-size: 20px;
+    }
+    .content {
+        font-size: 10px;
+    }
+}
