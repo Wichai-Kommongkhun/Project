@@ -65,7 +65,7 @@ def menu_6():
 def menu_7():
     return render_template('food_all/food_menu/menu_7.html')
 
-@app.route("/กระเพาอกไก่7")
+@app.route("/ห่อหมกปลาดอรี่")
 def menu_8():
     return render_template('food_all/food_menu/menu_8.html')
 
