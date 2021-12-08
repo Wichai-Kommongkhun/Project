@@ -41,24 +41,23 @@ def food_page5():
 def menu_1():
     return render_template('food_all/food_menu/menu_1.html')
 
-
 @app.route("/ต้มจืดไข่ขาว")
 def menu_2():
     return render_template('food_all/food_menu/menu_2.html')
 
-@app.route("/กระเพาอกไก่2")
+@app.route("/ต้มข่าอกไก่")
 def menu_3():
     return render_template('food_all/food_menu/menu_3.html')
 
-@app.route("/กระเพาอกไก่3")
+@app.route("/ก")
 def menu_4():
     return render_template('food_all/food_menu/menu_4.html')
 
-@app.route("/กระเพาอกไก่4")
+@app.route("/ก๋วยเตี๋ยวต้มยำไก่")
 def menu_5():
     return render_template('food_all/food_menu/menu_5.html')
 
-@app.route("/กระเพาอกไก่5")
+@app.route("/ต้มยำอกไก่น้ำใส")
 def menu_6():
     return render_template('food_all/food_menu/menu_6.html')
 
