@@ -1,1 +1,1 @@
-print(000)
+print('BIG')
