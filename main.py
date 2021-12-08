@@ -41,6 +41,41 @@ def food_page5():
 def menu_1():
     return render_template('food_all/food_menu/menu_1.html')
 
+@app.route("/กระเพาอกไก่")
+def menu_2():
+    return render_template('food_all/food_menu/menu_2.html')
+
+@app.route("/กระเพาอกไก่")
+def menu_3():
+    return render_template('food_all/food_menu/menu_3.html')
+
+@app.route("/กระเพาอกไก่")
+def menu_4():
+    return render_template('food_all/food_menu/menu_4.html')
+
+@app.route("/กระเพาอกไก่")
+def menu_5():
+    return render_template('food_all/food_menu/menu_5.html')
+
+@app.route("/กระเพาอกไก่")
+def menu_6():
+    return render_template('food_all/food_menu/menu_6.html')
+
+@app.route("/กระเพาอกไก่")
+def menu_7():
+    return render_template('food_all/food_menu/menu_7.html')
+
+@app.route("/กระเพาอกไก่")
+def menu_8():
+    return render_template('food_all/food_menu/menu_8.html')
+
+@app.route("/กระเพาอกไก่")
+def menu_9():
+    return render_template('food_all/food_menu/menu_9.html')
+
+@app.route("/กระเพาอกไก่")
+def menu_10():
+    return render_template('food_all/food_menu/menu_10.html')
 
 
 

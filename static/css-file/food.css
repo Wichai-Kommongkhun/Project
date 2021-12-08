@@ -142,18 +142,11 @@ nav{
     
 
 }
-.title-food{
-    margin: 5% 0 0 22%;
-
-}
-.title-food h1 {
-    font-size: 60px;
-}
 
 .p-title {
-    margin: 1% 0 0 38%;
+    margin: -3% 0 0 38%;
     position: absolute;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     
 }
