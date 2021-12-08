@@ -49,7 +49,7 @@ def menu_2():
 def menu_3():
     return render_template('food_all/food_menu/menu_3.html')
 
-@app.route("/ก")
+@app.route("/แกงเหลืองสับปะรด")
 def menu_4():
     return render_template('food_all/food_menu/menu_4.html')
 
@@ -57,7 +57,7 @@ def menu_4():
 def menu_5():
     return render_template('food_all/food_menu/menu_5.html')
 
-@app.route("/ต้มยำอกไก่น้ำใส")
+@app.route("/ต้มยำอกไก่ใส่เห็ด")
 def menu_6():
     return render_template('food_all/food_menu/menu_6.html')
 
