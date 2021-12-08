@@ -57,7 +57,7 @@ def menu_4():
 def menu_5():
     return render_template('food_all/food_menu/menu_5.html')
 
-@app.route("/กระเพาอกไก่5")
+@app.route("/ต้มยำอกไก่น้ำใส")
 def menu_6():
     return render_template('food_all/food_menu/menu_6.html')
 
