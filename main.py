@@ -100,7 +100,7 @@ def exercise_page3():
 def exercise_set1():
     return render_template('exercise_all/exercise_set/exercise_set1.html')
 
-@app.route('/ออกกำลังกายต้นเเขน2')
+@app.route('/ออกกำลังกายหน้าท้อง')
 def exercise_set2():
     return render_template('exercise_all/exercise_set/exercise_set2.html')
 
