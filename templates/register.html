@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css-file/register.css">
+    <title>Register</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-size: cover;
+            margin: 0;
+            background: rgb(41, 40, 40);
+        }
+
+        .bg_con video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    </style>
+</head>
+    
+<body>
+    
+    <div class="bg_con">
+        <video playsinline autoplay muted loop >
+            <source src="/static/Video/Cinematic Fitness Motivation - Commercial Video Edit V.01.mp4" type="video/mp4">
+            
+        </video>
+        
+    </div>
+    <div class="register-from">
+        <form class="input-from">
+            <h1>ลงทะเบียน</h1>
+            <label>Nickname :</label>
+            <input type="text" name="name" class="input-name" placeholder="ชื่อเล่น" maxlength="8">
+            <br>
+            <label>Usename :</label>
+            <input type="text" name="username" class="input-username" placeholder="ชื่อผู้ใช้"
+             maxlength="22" minlength="6">
+            <br>
+            <label>Password :</label>
+            <input type="password" name="password" class="input-password" placeholder="รหัสผ่านเป็นตัวอักษรหรือตัวเลข"
+            minlength="8" maxlength="22">
+            <br>
+            <label>Password :</label>
+            <input type="password" name="password-agian" class="input-password" placeholder="รหัสผ่านอีกครั้ง"
+            minlength="8" maxlength="22">
+            <br>
+            <label>Email :</label>
+            <input type="email" name="email" class="input-email" placeholder="Email">
+            <br>
+            <button>ยืนยัน</button>
+            <p>มีปัญชีอยู่เเล้ว <a href="http://127.0.0.1:5000/home">กลับสู่หน้าหลัก</a></p>
+        </form>
+        
+    </div>
+    
+</body>
+</html>

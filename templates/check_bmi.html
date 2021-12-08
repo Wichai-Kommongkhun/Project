@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css-file/check_bmi.css">
+    <title>Check BMI</title>
+</head>
+<body>
+    <div class="box-center">
+        <nav >
+            <div class="logo">
+                <h4>HEALTH IS FUN</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5000/home">HOME</a></li>
+                <li><a href="http://127.0.0.1:5000/check_bmi">CHECK BMI</a></li>
+                <li><a href="http://127.0.0.1:5000/food">FOOD</a></li>
+                <li><a href="http://127.0.0.1:5000/exercise">EXERCISE</a></li>
+                
+
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                
+            </div>
+        </nav>
+        <div class="box_1">
+            <img src="/static/images/EAcmpB8UYAI6G2X.jpg" style="position: absolute;" class="-img">
+            <h1 style="position: absolute;">คำนวนหาค่า BMI ของคุณได้ที่นี้</h1>
+            <form class="from-box" action="/check_bmi" method="POST">
+                <input type="number" name="input-1" placeholder="น้ำหนัก(กิโลกรัม)">
+                <br>
+                <input type="number" name="input-2" placeholder="ส่วนสูง(เซนติเมตร)"> <br>
+                <button type="submit" class="btn-submit">คำนวน</button>
+                
+            </form>
+            <div class="show_bmi">
+                <p>BMI ของคุณคือ</p>
+                {%if show_bmi%}
+                <h5 class="p-bmi">{{show_bmi}}</h5>
+                {%endif%}
+                {%if message%}
+                <h6 class="p-check">{{message}}</h6>
+                {%endif%}
+                
+            </div>
+            <form action="/check_bmi" method="POST" class="reset-form">
+                <button type="submit" name="reset" >🔄</button>
+            </form>
+            <p>การคำนวณค่าดัชนีมวลกาย นอกจากเราได้ทราบถึงรูปร่างและสัดส่วนแล้ว 
+            <br>ยังทำให้เราทราบถึงความเสี่ยงการเกิดโรคต่างๆ ค่าดัชนีมวลกาย Body Mass Index
+            <br>หรือเรียกย่อ ๆ ว่า BMI คือ ตัวชี้วัดมาตรฐานเพื่อประเมินสภาวะของร่างกายว่า 
+            <br>มีความสมดุลของน้ำหนักตัวต่อส่วนสูงอยู่ในเกณฑ์ที่เหมาะสมหรือไม่
+            <br>ในกรณีที่มีค่าดัชนีมวลกายสูง และถูกวินิจฉัยว่ามีภาวะน้ำหนักเกินหรือเป็นโรคอ้วน 
+            <br> ก็อาจทำให้เสี่ยงต่อปัญหาสุขภาพมากมาย ได้แก่ โรคความดันโลหิตสูง 
+            <br> ระดับโคเลสเตอรอลและระดับไตรกลีเซอไรด์ในเลือดสูง โรคเบาหวานชนิดที่ 2 
+            <br> โรคหลอดเลือดหัวใจ โรคหลอดเลือดสมอง โรคเกี่ยวกับถุงน้ำดี โรคข้อเข่าเสื่อม
+            <br>  ภาวะการหยุดหายใจขณะหลับหรือปัญหาในการหายใจ และโรคมะเร็งชนิดต่างๆ</p>
+        </div>
+        
+        <div class="box-end">
+            <div class="end-txt" >
+                <p>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                <br>
+                <p style="font-size: 18px;">
+                    ที่อยู่: 1 ซอย ฉลองกรุง 1 แขวง ลาดกระบัง เขตลาดกระบัง
+                    <br>
+                    กรุงเทพมหานคร 10520 
+                    <br>
+                    โทรศัพท์: 02 329 8000
+                </p>
+                <br>
+                <a href="#" style="text-decoration: none;" >เกี่ยวกับเรา</a>
+            </div>
+            <div class="end-txt1">
+                <p>เเจ้งปัญหาหรือติดต่อ</p>
+                <br>
+                <p>E-mail : 64070xxx@it.kmitl.ac.th</p>
+                <p>E-mail : 64070xxx@it.kmitl.ac.th</p>
+                <p>E-mail : 64070xxx@it.kmitl.ac.th</p>
+                <p>E-mail : 64070xxx@it.kmitl.ac.th</p>
+                <p>E-mail : 64070xxx@it.kmitl.ac.th</p>
+                <p>Tel : 08025xxxxx</p>
+                <p>Tel : 08025xxxxx</p>
+                <p>Tel : 08025xxxxx</p>
+                <p>Tel : 08025xxxxx</p>
+                <p>Tel : 08025xxxxx</p>
+                <p>FB : xxxxx xxxxxx</p>
+            </div>
+            <div class="end-txt2">
+                <p>แหล่งที่มา/อ้างอิง</p>
+                <br>
+                <a href="https://www.si.mahidol.ac.th/">www.si.mahidol.ac.th</a>
+                <br>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amara-clinic.com%2Fwhat-is-bmi%2F&psig=AOvVaw1eCWT_
+                f1N3q56QQRsBYf6S&ust=1636364618124000&source=images&cd=v
+                fe&ved=0CAsQjRxqFwoTCIDi9LD7hfQCFQAAAAAdAAAAABAV">images-1</a>
+                <br>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fhashtag%2F%25E0%25B8%2594%25E0%25B8%25B1%25E0%25B8%258A%25E0%25B8%2599%25E0%25B8%25B5%25E0%25B8%25A1%25E0%25B8%25A7%25E0%25B8%25A5%25E0%25B8%2581%25E0%25B8%25B2%25E0%25B8%25A2&psig=AOvVaw
+                1wodPahWhP0_2n52vhof7_&ust=163636246782700
+                0&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiH_LHzhfQCFQAAAAAdAAAAABAJ">images-2</a>
+                <br>
+    
+
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

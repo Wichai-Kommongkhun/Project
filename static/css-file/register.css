@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.register-from{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    margin: 0% 0 0 0%;
+    position: absolute;
+}
+
+.register-from label{
+    color: aliceblue;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 0 0 35%;
+}
+
+/* ส่วนของเเบบฟรอมกรอกข้อมูล */
+.input-from {
+    margin: 0% 0 0 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+
+.input-from h1{
+    font-size: 60px;
+    color: aliceblue;  
+    margin: 5% 0 0 43%;
+
+
+}
+.input-from p {
+    font-size: 22px;
+    margin: 2% 0 0 42.5%;
+    color: rgb(207, 206, 206);
+     
+}
+
+.input-from a{
+
+    color: rgb(240, 46, 21,0.8);
+}
+.input-name{
+    margin: 2% 0 0 1.7%;
+    width: 20%;
+    height: 5.5%;
+    font-size: 20px;
+    background-color: rgb(34, 34, 34,0.1);
+    color: aliceblue;
+}
+
+.input-username{
+    margin: 1% 0 0 2.1%;
+    width: 20%;
+    height: 5.5%;
+    font-size: 20px;
+    background-color: rgb(34, 34, 34,0.1);
+    color: aliceblue;
+}
+
+.input-password{
+    font-size: 20px;
+    margin: 1% 0 0 2%;
+    width: 20%;
+    height: 5.5%;
+    background-color: rgb(34, 34, 34,0.1);
+    color: aliceblue;
+}
+
+.input-email{
+    font-size: 20px;
+    margin: 1% 0 0 3.7%;
+    width: 20%;
+    height: 5.5%;
+    background-color: rgb(34, 34, 34,0.1);
+    color: aliceblue;
+}
+
+.input-from button {
+    margin: 2% 0 0 42.4%;
+    width: 5%;
+    height: 6%;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: rgb(34, 34, 34,0.1);
+    color: aliceblue;
+    
+}
+
+
+

@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-center{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    margin: 0% 0 0 0;
+    position: absolute;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: rgb(47, 153, 82);
+    align-items: center;
+    
+}
+
+.logo {
+    color: rgb(241, 255, 215);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 26px;
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 550;
+    font-size: 26px;
+    color: rgb(241, 255, 215);
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    background-color: rgb(255, 255, 255);
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3 ease;
+}
+@media screen  and (max-width:1024px){
+    .nav-links { 
+        width: 60%;
+    }
+}
+   
+
+
+@media screen  and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: antiquewhite;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+    
+    
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.box_1 {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(104, 105, 102);
+    margin: 3% 0 0 0;
+}
+.-img{
+    width: 820px;
+    height: 680px;
+    margin: 2% 0 0 5%;
+
+}
+
+.png-1 {
+    margin: 21% 0 0 60%;
+    width: 500px;
+    height: 300px;
+}
+.box_1 h1{
+    position: absolute;
+    margin:2% 0 0 53%;
+    color: rgb(212, 211, 211);
+    font-size: 50px;
+
+}
+.box_1 p {
+    position: absolute;
+    margin:20% 0 0 50%;
+    color: rgb(212, 211, 211);
+    font-size: 28px;
+}
+
+.from-box {
+    margin: 7% 0 0 50%;
+    width: 30%;
+    height: 45%;
+    background-color: none;
+    position: absolute;
+}
+
+.from-box input {
+    width: 45%;
+    height: 15%;
+    margin: 2% 0 0% 10%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+
+}
+
+.btn-submit {
+    width: 15%;
+    height: 15%;
+    margin: 1% 0 0 40%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.reset-form{
+    margin: 17% 0 0 83%;
+    position: absolute;
+}
+.reset-form button{
+    width: 100%;
+    height: 10%;
+    font-size: 22px;
+    background-color: rgb(34, 34, 34);
+}
+
+.show_bmi {
+    border: solid beige;
+
+    margin: 7% 0 0 70%;
+    position: absolute;
+    width: 15%;
+    height: 25%;
+    background-color: rgb(34, 34, 34);
+}
+
+.show_bmi p {
+    margin: 0% 0 0 15%;
+    font-weight: 600;
+    color: rgb(122, 224, 96);
+    position: absolute;
+}
+.p-bmi{
+    margin: 18% 0 0 25%;
+    color: beige;
+    font-size: 60px;
+}
+
+.p-check{
+    color: antiquewhite;
+    font-size: 45px;
+    margin: 0 0 0 7%;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+/* end txt */
+.box-end {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(70, 126, 86);
+    margin: 5% 0 0% 0;
+    position: absolute;
+}
+
+
+
+.end-txt{
+    position: absolute;
+    margin: 2% 0 0 6%;
+    color: white;
+    font-size: 25px;
+}
+
+.end-txt a{
+    position: absolute;
+    margin: 2% 0 0 0%;
+    color: white;
+    font-size: 25px;
+}
+
+.end-txt1{
+    margin: 2% 0 0 43%;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+}
+
+.end-txt2 {
+    margin: 2% 0 0 70%;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+}
+
+.end-txt2 a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 253, 253);
+}

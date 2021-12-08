@@ -1,0 +1,98 @@
+from flask import Flask, render_template, request, redirect, url_for, session
+from flask.helpers import flash
+from flask_mysqldb import MySQL
+import MySQLdb.cursors
+import re
+import bcrypt
+from datetime import datetime
+
+app = Flask(__name__)
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+@app.route('/food')
+def food():
+    return render_template('food_all/food_page1.html')
+
+@app.route('/food_page2')
+def food_page2():
+    return render_template('food_all/food_page2.html')
+
+@app.route('/food_page3')
+def food_page3():
+    return render_template('food_all/food_page3.html')
+
+@app.route('/food_page4')
+def food_page4():
+    return render_template('food_all/food_page4.html')
+
+@app.route('/food_page5')
+def food_page5():
+    return render_template('food_all/food_page5.html')
+
+
+@app.route('/exercise')
+def excercise_page1():
+    return render_template('exercise_all/exercise_page1.html')
+
+@app.route('/exercise_page2')
+def exercise_page2():
+    return render_template('exercise_all/exercise_page2.html')
+
+@app.route('/exercise_page3')
+def exercise_page3():
+    return render_template('exercise_all/exercise_page3.html')
+
+
+
+
+@app.route('/check_bmi' , methods=['POST','GET'])
+def check():
+    show_bmi = '0.00'
+    message = 'กรอกข้อมูลของท่าน'
+    if request.method=="POST" and "input-1" in request.form and 'input-2' in request.form:
+        weight = float(request.form['input-1'])
+        height = float(request.form['input-2'])
+        show_bmi = weight/((height/100)*2)
+        show_bmi = '%.2f' %show_bmi
+
+        if float(show_bmi) >= 30:
+            message = 'อ้วนระดับ2'
+        elif float(show_bmi) >= 25.0 and float(show_bmi) < 30:
+            message = 'อ้วนระดับ1'
+        elif float(show_bmi) >= 23.0 and float(show_bmi) < 25:
+            message = 'น้ำหนักเกิน'
+        elif float(show_bmi) >= 18.5 and float(show_bmi) < 23:
+            message = 'น้ำหนักตัวปกติ'
+        elif float(show_bmi) < 18.5:
+            message = 'น้ำหนักตัวน้อย'
+        else:
+            message = 'Erorr'
+
+
+
+    return render_template('check_bmi.html', show_bmi=show_bmi , message=message)
+
+
+
+@app.route('/login')
+def login():
+    return
+
+
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
+
+
+
+
+
+
+if __name__=="__main__":
+    app.run(debug=True)
+
+
