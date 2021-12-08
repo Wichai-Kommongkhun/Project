@@ -7,11 +7,13 @@ import bcrypt
 from datetime import datetime
 
 app = Flask(__name__)
-
+#index
 @app.route('/home')
 def home():
     return render_template('home.html')
 
+
+#Food pages
 @app.route('/food')
 def food():
     return render_template('food_all/food_page1.html')
@@ -33,6 +35,33 @@ def food_page5():
     return render_template('food_all/food_page5.html')
 
 
+#munu page
+
+@app.route("/กระเพาอกไก่")
+def menu_1():
+    return render_template('food_all/food_menu/menu_1.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Exercise 
 @app.route('/exercise')
 def excercise_page1():
     return render_template('exercise_all/exercise_page1.html')
@@ -44,8 +73,6 @@ def exercise_page2():
 @app.route('/exercise_page3')
 def exercise_page3():
     return render_template('exercise_all/exercise_page3.html')
-
-
 
 
 @app.route('/check_bmi' , methods=['POST','GET'])
@@ -70,21 +97,9 @@ def check():
             message = 'น้ำหนักตัวน้อย'
         else:
             message = 'Erorr'
-
-
-
     return render_template('check_bmi.html', show_bmi=show_bmi , message=message)
 
 
-
-@app.route('/login')
-def login():
-    return
-
-
-@app.route('/register')
-def register():
-    return render_template('register.html')
 
 
 
