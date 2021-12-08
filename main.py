@@ -49,48 +49,33 @@ def menu_2():
 def menu_3():
     return render_template('food_all/food_menu/menu_3.html')
 
-@app.route("/กระเพาอกไก่")
+@app.route("/กระเพาอกไก่3")
 def menu_4():
     return render_template('food_all/food_menu/menu_4.html')
 
-@app.route("/กระเพาอกไก่")
+@app.route("/กระเพาอกไก่4")
 def menu_5():
     return render_template('food_all/food_menu/menu_5.html')
 
-@app.route("/กระเพาอกไก่")
+@app.route("/กระเพาอกไก่5")
 def menu_6():
     return render_template('food_all/food_menu/menu_6.html')
 
-@app.route("/กระเพาอกไก่")
+@app.route("/กระเพาอกไก่6")
 def menu_7():
     return render_template('food_all/food_menu/menu_7.html')
 
-@app.route("/กระเพาอกไก่")
+@app.route("/กระเพาอกไก่7")
 def menu_8():
     return render_template('food_all/food_menu/menu_8.html')
 
-@app.route("/กระเพาอกไก่")
+@app.route("/กระเพาอกไก่8")
 def menu_9():
     return render_template('food_all/food_menu/menu_9.html')
 
-@app.route("/กระเพาอกไก่")
+@app.route("/กระเพาอกไก่9")
 def menu_10():
     return render_template('food_all/food_menu/menu_10.html')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -108,6 +93,27 @@ def exercise_page2():
 @app.route('/exercise_page3')
 def exercise_page3():
     return render_template('exercise_all/exercise_page3.html')
+
+# Exercise set
+@app.route('/ออกกำลังกายต้นเเขน')
+def exercise_set1():
+    return render_template('exercise_all/exercise_set/exercise_set1.html')
+
+@app.route('/ออกกำลังกายต้นเเขน2')
+def exercise_set2():
+    return render_template('exercise_all/exercise_set/exercise_set2.html')
+
+
+@app.route('/ออกกำลังกายต้นเเขน3')
+def exercise_set3():
+    return render_template('exercise_all/exercise_set/exercise_set3.html')
+
+
+
+@app.route('/ออกกำลังกายต้นเเขน4')
+def exercise_set4():
+    return render_template('exercise_all/exercise_set/exercise_set4.html')
+
 
 
 @app.route('/check_bmi' , methods=['POST','GET'])
