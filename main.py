@@ -45,7 +45,7 @@ def menu_1():
 def menu_2():
     return render_template('food_all/food_menu/menu_2.html')
 
-@app.route("/กระเพาอกไก่")
+@app.route("/ต้มข่าอกไก่")
 def menu_3():
     return render_template('food_all/food_menu/menu_3.html')
 
