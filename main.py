@@ -1,10 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask.helpers import flash
-from flask_mysqldb import MySQL
-import MySQLdb.cursors
-import re
-import bcrypt
-from datetime import datetime
+
+
 
 app = Flask(__name__)
 #index
@@ -49,7 +46,7 @@ def menu_2():
 def menu_3():
     return render_template('food_all/food_menu/menu_3.html')
 
-@app.route("/ก")
+@app.route("/แกงเหลืองสับปะรด")
 def menu_4():
     return render_template('food_all/food_menu/menu_4.html')
 
@@ -57,23 +54,23 @@ def menu_4():
 def menu_5():
     return render_template('food_all/food_menu/menu_5.html')
 
-@app.route("/ต้มยำอกไก่น้ำใส")
+@app.route("/แกงเลียง")
 def menu_6():
     return render_template('food_all/food_menu/menu_6.html')
 
-@app.route("/กระเพาอกไก่6")
+@app.route("/ส้มตำผลไม้")
 def menu_7():
     return render_template('food_all/food_menu/menu_7.html')
 
-@app.route("/กระเพาอกไก่7")
+@app.route("/ห่อหมกปลาดอรี่")
 def menu_8():
     return render_template('food_all/food_menu/menu_8.html')
 
-@app.route("/กระเพาอกไก่8")
+@app.route("/น้ำพริกอ่องอกไก่")
 def menu_9():
     return render_template('food_all/food_menu/menu_9.html')
 
-@app.route("/กระเพาอกไก่9")
+@app.route("/อกไก่คั่วพริกแกง")
 def menu_10():
     return render_template('food_all/food_menu/menu_10.html')
 
@@ -104,7 +101,7 @@ def exercise_set2():
     return render_template('exercise_all/exercise_set/exercise_set2.html')
 
 
-@app.route('/ออกกำลังกายต้นเเขน3')
+@app.route('/ออกกำลังกายต้นขา')
 def exercise_set3():
     return render_template('exercise_all/exercise_set/exercise_set3.html')
 

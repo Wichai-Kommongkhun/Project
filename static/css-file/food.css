@@ -114,15 +114,33 @@ nav{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.title-food {
+.title-food{
+    height: 100%;
     width: 100%;
-    height: 35%;
+}
+.title-food h1 {
+    margin: 0 0 0 25.5%;
+    font-size: 120px;
+    font-family: 'Fredoka One', cursive;
+}
+.seach {
+    width: 35%;
 
-    margin: 0 0 5% 0;
-    
-
+    margin: 2% 0 0 32%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------- */
 .next-back {
     width: 100%;
     height: 12%;

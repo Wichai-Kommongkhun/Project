@@ -9,6 +9,12 @@
      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="
      sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="/static/food.js"></script>
+     <script src="/static/app.js"></script>
     <title>Food Recommend</title>
 
     <style>
@@ -44,8 +50,22 @@
         
         <div class="container">
             <div class="title-food">
+                <h1>FOOD PSIT</h1>
+                <div>
                 
+                 
+                </div>
+                <div class="seach">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="ใส่ชื่ออาหาร" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">ค้นหา</button>
+                      </form>
+                </div>
+            
             </div>
+                
+               
+            
             <div class="row">
                     <!-- เมนูที่1 -->
                     <div class="col-md-3"> 
@@ -92,11 +112,11 @@
                         <br>
                         <div class="card" style="width: 18rem;">
 
-                            <img src="/static/images/ซุบหน่อไม้.jpg" class="card-img-top"  alt="...">
+                            <img src="/static/images/แกงเหลืองสับปะรด.jpg" class="card-img-top"  alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">ซุบหน่อไม้</h5>
-                            <p class="card-text">ซุบหน่อไม้ เป็นเมนูที่ใครๆหลายคนเคยกิน มีอยู่ทั่วในประเทศไทย สามารถหากินได้ง่าย..</p>
-                            <a href="http://127.0.0.1:5000/ซุบหน่อไม้" class="btn btn-primary">วิธีทำ</a>
+                            <h5 class="card-title">แกงเหลืองสับปะรด</h5>
+                            <p class="card-text">แกงเหลือง เป็นอาหารที่ใครก็รู้จัก เราสามารถทำแบบคลีนได้แต่ก็อร่อยเหมือนเดิม ..</p>
+                            <a href="http://127.0.0.1:5000/แกงเหลืองสับปะรด" class="btn btn-primary">วิธีทำ</a>
                             </div>
                         </div>
                     </div>
@@ -105,11 +125,11 @@
                 <div class="col-md-3">
                     <br>
                     <div class="card" style="width: 18rem;">
-                        <img src="/static/images/ต้มยำอกไก่น้ำใส.jpg" class="card-img-top"  alt="" >
+                        <img src="/static/images/ซุบหน่อไม้.jpg" class="card-img-top"  alt="" >
                         <div class="card-body">
-                        <h5 class="card-title">ต้มยำอกไก่น้ำใส</h5>
-                        <p class="card-text">ต้มยำเป้นเมนูอาหารประจำชาติไทย ทุกบ้านต้องเคยรับประทานเป็นที่สุด เป็นอาหารที่มีสมุนไพร..</p>
-                        <a href="http://127.0.0.1:5000/ต้มยำอกไก่น้ำใส" class="btn btn-primary">วิธีทำ</a>
+                        <h5 class="card-title">ซุบหน่อไม้</h5>
+                        <p class="card-text">ซุบหน่อไม้ เป็นเมนูที่ใครๆหลายคนเคยกิน มีอยู่ทั่วในประเทศไทย สามารถหากินได้ง่าย..</p>
+                        <a href="http://127.0.0.1:5000/ซุบหน่อไม้" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -118,11 +138,11 @@
                 <div class="col-md-3">
                     <br>
                     <div class="card" style="width: 18rem;">
-                        <img src="/static/images/food1.jpg" class="card-img-top" alt="...">
+                        <img src="/static/images/แกงเลียง.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">แกงเลียง</h5>
+                        <p class="card-text">แกงเลียงเป็นเมนูอาหารที่นิยม ทุกบ้านต้องเคยรับประทานเป็นที่สุด เป็นอาหารที่มีสมุนไพร..</p>
+                        <a href="http://127.0.0.1:5000/แกงเลียง" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -131,11 +151,11 @@
                 <div class="col-md-3">
                     <br>
                     <div class="card" style="width: 18rem;">
-                        <img src="/static/images/food1.jpg" class="card-img-top" alt="...">
+                        <img src="/static/images/ส้มตำผลไม้2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">ส้มตำผลไม้</h5>
+                        <p class="card-text">ส้มตำ อาหารรสเด็ดที่ใครได้ลิ้มรส ก็จะติดใจอย่างมาก และสามารถหาซื้อวัตถุดิบได้ง่าย..</p>
+                        <a href="http://127.0.0.1:5000/ส้มตำผลไม้" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -144,11 +164,11 @@
                 <div class="col-md-3">
                     <br>
                     <div class="card" style="width: 18rem;">
-                        <img src="/static/images/food1.jpg" class="card-img-top" alt="...">
+                        <img src="/static/images/ห่อหมกปลาดอรี่.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">ห่อหมกปลาดอรี่</h5>
+                        <p class="card-text">ห่อหมกปลาดอรี่ เป็นอาหารพื้นบ้านที่ เราสามารถทำแบบคลีนได้แต่ก็อร่อยเหมือนเดิม และมีราคาที่ถูก..</p>
+                        <a href="http://127.0.0.1:5000/ห่อหมกปลาดอรี่" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -157,11 +177,11 @@
                 <div class="col-md-3">
                     <br>
                     <div class="card" style="width: 18rem;">
-                        <img src="/static/images/food1.jpg" class="card-img-top" alt="...">
+                        <img src="/static/images/น้ำพริกอ่องอกไก่.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">น้ำพริกอ่องอกไก่</h5>
+                        <p class="card-text">น้ำพริกอ่องเป็นน้ำพริกซึ่งนิยมรับประทานกัน ในภาคเหนือของประเทศไทยเป็นอาหารที่มีสมุนไพร..</p>
+                        <a href="http://127.0.0.1:5000/น้ำพริกอ่องอกไก่" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -171,11 +191,11 @@
                     <br>
                     <div class="card" style="width: 18rem;">
                         
-                        <img src="/static/images/food1.jpg" class="card-img-top" alt="...">
+                        <img src="/static/images/อกไก่คั่วพริกแกง2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">อกไก่คั่วพริกแกง</h5>
+                        <p class="card-text">อกไก่คั่วพริกแกง อาหารไทยที่ใช้พริกแกง พริกแกงคือส่วนหนึ่งของอาหารหลากหลายชนิดเป็นที่นิยม..</p>
+                        <a href="http://127.0.0.1:5000/อกไก่คั่วพริกแกง" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
