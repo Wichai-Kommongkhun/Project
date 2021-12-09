@@ -1,10 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask.helpers import flash
-from flask_mysqldb import MySQL
-import MySQLdb.cursors
-import re
-import bcrypt
-from datetime import datetime
+
+
 
 app = Flask(__name__)
 #index
