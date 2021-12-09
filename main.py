@@ -104,7 +104,7 @@ def exercise_set2():
     return render_template('exercise_all/exercise_set/exercise_set2.html')
 
 
-@app.route('/ออกกำลังกายต้นเเขน3')
+@app.route('/ออกกำลังกายต้นขา')
 def exercise_set3():
     return render_template('exercise_all/exercise_set/exercise_set3.html')
 
