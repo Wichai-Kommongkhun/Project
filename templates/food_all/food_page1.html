@@ -15,6 +15,13 @@
      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <script src="/static/food.js"></script>
      <script src="/static/app.js"></script>
+    <link rel="stylesheet" href="/static/css-file/home_footer.css">
+    <link rel="stylesheet" href="/static/css-file/menubar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Food Recommend</title>
 
     <style>
@@ -26,26 +33,21 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid">
     <div class="box-center">
-        <nav >
-            <div class="logo">
-                <h4>HEALTH IS FUN</h4>
-            </div>
-            <ul class="nav-links">
-                <li><a href="{{url_for('home')}}">HOME</a></li>
-                <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
-                <li><a href="{{url_for('food')}}">FOOD</a></li>
-                <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
-                
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                
-            </div>
-        </nav>
+        <nav>
+            <div class="logo">HEALTH IS FUN</div>
+             <input type="checkbox" id="click">
+             <label for="click" class="menu-btn">
+               <i class="fas fa-bars"></i>
+             </label>
+             <ul>
+               <li><a href="{{url_for('home')}}">Home</a></li>
+               <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
+               <li><a href="{{url_for('food')}}" class="active">FOOD</a></li>
+               <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
+               <li><a href="#">#</a></li>
+             </ul>
+          </nav>
     
         
         <div class="container">
@@ -256,5 +258,44 @@
         
     </div>
 </div>
+<footer class="footer" style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>about</h4>
+                <ul>
+                    <li class="thaifont" ><a href="https://www.it.kmitl.ac.th/th/" target="_blank">คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</a></li>
+                    <li class="thaifont"><a href="https://www.it.kmitl.ac.th/th/about/travel/" target="_blank">เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>special thank</h4>
+                <ul>
+                    <li><a href="https://www.si.mahidol.ac.th/" target="_blank">Mahidol</a></li>
+                    <li><a href="https://www.amara-clinic.com/what-is-bmi/" target="_blank">AmaraClinic</a></li>
+                    <li><a href="https://twitter.com/SiPHHospital/status/1154934324132642816?s=20" target="_blank">Image-1</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>email & contact us</h4>
+                <ul>
+                    <li><a href="https://mail.google.com/" target="_blank">64070039@it.kmitl.ac.th</a></li>
+                    <li><a href="https://mail.google.com/" target="_blank">64070180@it.kmitl.ac.th</a></li>
+                    <li><a href="https://mail.google.com/" target="_blank">64070191@it.kmitl.ac.th</a></li>
+                    <li><a href="https://mail.google.com/" target="_blank">64070220@it.kmitl.ac.th</a></li>
+                 <li><a href="https://mail.google.com/" target="_blank">64070230@it.kmitl.ac.th</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>social</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/kmitlofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/kmitlofficial?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/kmitlofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+</footer>
 </body>
 </html>
