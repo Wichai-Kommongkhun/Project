@@ -115,7 +115,7 @@ nav{
 }
 
 .title-food{
-    height: 100%;
+    height: 70%;
     width: 100%;
 }
 .title-food h1 {
@@ -161,18 +161,13 @@ nav{
 
 }
 
-.p-title {
-    margin: -3% 0 0 38%;
-    position: absolute;
-    font-size: 30px;
-    font-weight: 500;
-    
-}
+
 
 
 .menu {
     margin: 5% 0 0 15%;
-    width: 60%;
+    width: 73.5%;
+    
 }
 
 .menu h3 {
@@ -181,4 +176,19 @@ nav{
 }
 .menu p {
     font-size: 20px;
+}
+
+
+.title-box {
+    width: 100%;
+    margin: -3% 0 0 0%;
+
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title-box img{
+    margin: 0 0 0 9%;
+    width: 780px;
+    height: 600px;
 }
