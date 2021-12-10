@@ -31,10 +31,10 @@
                 <h4>HEALTH IS FUN</h4>
             </div>
             <ul class="nav-links">
-                <li><a href="http://127.0.0.1:5000/home">HOME</a></li>
-                <li><a href="http://127.0.0.1:5000/check_bmi">CHECK BMI</a></li>
-                <li><a href="http://127.0.0.1:5000/food">FOOD</a></li>
-                <li><a href="http://127.0.0.1:5000/exercise">EXERCISE</a></li>
+              <li><a href="{{url_for('home')}}">HOME</a></li>
+              <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
+              <li><a href="{{url_for('food')}}">FOOD</a></li>
+              <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
                 <li><a href="#">#</a></li>
             </ul>
             <div class="burger">
@@ -57,10 +57,10 @@
                 <div class="col">
                   
                   <div class="card">
-                    <a href="http://127.0.0.1:5000/ออกกำลังกายต้นเเขน">
+                    <a href="{{url_for('exercise_set1')}}">
                       <img src="/static/images/arm-1.jpg" class="card-img-top" alt="..."></a>
                       <div class="card-body">
-                        <a href="http://127.0.0.1:5000/ออกกำลังกายต้นเเขน">
+                        <a href="{{url_for('exercise_set1')}}">
                         <h5 class="card-title">ออกกำลังกายกล้ามเนื้อต้นเเขน</h5>
                         <p class="card-text">เเนะนำการออกกำลังกายต้นเเขนที่ช่วยลดไขมันเเละเพิ่มกล้ามเนื้อให้กับต้นเเขนอย่างถูกต้อง โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ</p>
                       </a>
@@ -71,10 +71,10 @@
 <!--  -->
                 <div class="col">
                   <div class="card">
-                    <a href="http://127.0.0.1:5000/ออกกำลังกายหน้าท้อง">
+                    <a href="{{url_for('exercise_set2')}}">
                     <img src="/static/images/หน้าท้อง.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <a href="http://127.0.0.1:5000/ออกกำลังกายหน้าท้อง">
+                      <a href="{{url_for('exercise_set2')}}">
                       <h5 class="card-title">ออกกำลังกายกล้ามเนื้อหน้าท้อง</h5>
                       <p class="card-text"> เเนะนำการออกกำลังกายเเละบริหารกล้ามเนื้อหน้าท้องด้วยวิธีที่ถูกต้องเเละสามารถทำเองได้ที่บ้าน โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ</p>
                     </a>
@@ -85,10 +85,10 @@
 <!-- ออกกำลังกายต้นขา -->
                 <div class="col">
                   <div class="card">
-                    <a href="http://127.0.0.1:5000/ออกกำลังกายต้นขา">
+                    <a href="{{url_for('exercise_set3')}}">
                     <img src="/static/images/หน้า ต้นขา.jfif" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <a href="http://127.0.0.1:5000/ออกกำลังกายต้นขา">
+                      <a href="{{url_for('exercise_set3')}}">
                         <h5 class="card-title">ออกกำลังกายกล้ามเนื้อต้นขา</h5>
                         <p class="card-text">เเนะนำการออกกำลังกายเเละบริหารกล้ามเนื้อต้นขาอย่างถูกวิธีเเละสามารถทำได้เองที่บ้าน โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ</p>
                       </a>  
@@ -99,10 +99,10 @@
 <!-- ออกกำลังกายกล้ามเนื้อหน้าอก -->
                 <div class="col">
                   <div class="card">
-                    <a href="http://127.0.0.1:5000/ออกกำลังกายกล้ามเนื้อหน้าอก">
+                    <a href="{{url_for('exercise_set4')}}">
                     <img src="/static/images/กล้ามอก1.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <a href="http://127.0.0.1:5000/ออกกำลังกายกล้ามเนื้อหน้าอก">
+                      <a href="{{url_for('exercise_set4')}}">
                       <h5 class="card-title">ออกกำลังกล้ามเนื้อหน้าอก</h5>
                       <p class="card-text"> เเนะนำการออกกำลังกายกล้ามเนื้อหน้าอกเพื่อให้คุณมีบุคลิกที่ดีขึ้นเเละยังเพิ่มความเเข็งเเรงเเละรูปร่างที่สวยงาม
                         โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ

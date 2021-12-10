@@ -31,10 +31,10 @@
                 <h4>HEALTH IS FUN</h4>
             </div>
             <ul class="nav-links">
-                <li><a href="http://127.0.0.1:5000/home">HOME</a></li>
-                <li><a href="http://127.0.0.1:5000/check_bmi">CHECK BMI</a></li>
-                <li><a href="http://127.0.0.1:5000/food">FOOD</a></li>
-                <li><a href="http://127.0.0.1:5000/exercise">EXERCISE</a></li>
+              <li><a href="{{url_for('home')}}">HOME</a></li>
+              <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
+              <li><a href="{{url_for('food')}}">FOOD</a></li>
+              <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
                 <li><a href="#">#</a></li>
             </ul>
             <div class="burger">
@@ -58,10 +58,10 @@
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                   <div class="card">
-                    <a href="http://127.0.0.1:5000/ออกกำลังกายกล้ามเนื้อหลัง">
+                    <a href="{{url_for('exercise_set5')}}">
                     <img src="/static/images/กล้ามเนื้อหลัง1.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <a href="http://127.0.0.1:5000/ออกกำลังกายกล้ามเนื้อหลัง">
+                      <a href="{{url_for('exercise_set5')}}">
                       <h5 class="card-title">ออกกำลังกายกล้ามเนื้อหลัง</h5>
                       <p class="card-text">เเนะนำการออกกำลังกายและบริหารกล้ามเนื้อต้นหลังเพื่อให้ลำตัวเเละบุคลิกการนั่งหรือการยืนของคุณมั่นใจมากขึ้น
                          โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ
@@ -74,10 +74,10 @@
 <!-- ออกกำลังกายกล้ามเเขน -->
                 <div class="col">
                   <div class="card">
-                    <a href="http://127.0.0.1:5000/ออกกำลังกายกล้ามเเขน">
-                    <img src="/static/images/exercise_test.jpg" class="card-img-top" alt="..."></a>
+                    <a href="{{url_for('exercise_set6')}}">
+                    <img src="/static/images/กล้ามเนื้อเเขน00.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <a href="http://127.0.0.1:5000/ออกกำลังกายกล้ามเเขน">
+                      <a href="{{url_for('exercise_set6')}}">
                       <h5 class="card-title">ออกกำลังกายกล้ามเนื้อเเขน</h5>
                       <p class="card-text">เเนะนำการออกกำลังกายกล้ามเนื้อเเขนที่จะช่วยคุณลดไขมันเเละเพิ่มกล้ามเนื้อ โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ.</p>
                       </a>
@@ -85,13 +85,19 @@
                   </div>
                 </div>
 
+<!-- คาร์ดิโอ    -->
 
+<!-- ออกกำลังกายเเบบคาร์ดิโอ -->
                 <div class="col">
                   <div class="card">
+                    <a href="{{url_for('exercise_set7')}}">
                     <img src="/static/images/exercise_test.jpg" class="card-img-top" alt="...">
+                    </a>
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                      <a href="{{url_for('exercise_set7')}}">
+                      <h5 class="card-title">ท่าออกกำลังกายเเบบคาร์ดิโอ</h5>
+                      <p class="card-text">เเนะนำการออกลังกายเเบบคาร์ดิโอเพื่อให้คุณลดไขมันใต้ผิวหนังทุกส่วนของร่างกาย โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ.
+                      </p></a>
                     </div>
                   </div>
                 </div>

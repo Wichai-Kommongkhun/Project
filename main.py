@@ -138,7 +138,7 @@ def menu_24():
 
 # Exercise 
 @app.route('/exercise')
-def excercise_page1():
+def exercise_page1():
     return render_template('exercise_all/exercise_page1.html')
 
 @app.route('/exercise_page2')
@@ -176,6 +176,10 @@ def exercise_set5():
 @app.route('/ออกกำลังกายกล้ามเเขน')
 def exercise_set6():
     return render_template('exercise_all/exercise_set/exercise_set6.html')
+
+@app.route('/ออกกำลังกายเเบบคาร์ดิโอ')
+def exercise_set7():
+    return render_template('exercise_all/exercise_set/exercise_set7.html')
 
 
 @app.route('/check_bmi' , methods=['POST','GET'])

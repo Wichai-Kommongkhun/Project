@@ -22,10 +22,10 @@
             <h4>HEALTH IS FUN</h4>
         </div>
             <ul class="nav-links">
-                <li><a href="http://127.0.0.1:5000/home">HOME</a></li>
-                <li><a href="http://127.0.0.1:5000/check_bmi">CHECK BMI</a></li>
-                <li><a href="http://127.0.0.1:5000/food">FOOD</a></li>
-                <li><a href="http://127.0.0.1:5000/exercise">EXERCISE</a></li>
+                <li><a href="{{url_for('home')}}">HOME</a></li>
+                <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
+                <li><a href="{{url_for('food')}}">FOOD</a></li>
+                <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
                 <li><a href="#">#</a></li>
             </ul>
 
@@ -49,7 +49,7 @@
                 <div class="flex-col2">
                     <img class="img1" src="/static/images/food1.jpg">
                     <div class="flex-col2-2 thaifont">
-                        <a href="http://127.0.0.1:5000/food" style="text-decoration: none;"><h1 class="head-content">เเนะนำอาหาร</h1></a>
+                        <a href="{{url_for('food')}}" style="text-decoration: none;"><h1 class="head-content">เเนะนำอาหาร</h1></a>
                         <p class="content">เรื่องที่สำคัญที่สุดของการดูเเลสุขภาพ คือ การรับประทานอาหาร
                         <br>Health is fun จะเเนะนำอาหารที่เหมาะกับความต้องการของคุณ
                         <br>โดยเราจะเเนะนำอาหารที่เหมาะกับการเพิ่มน้ำหนัก เเละ ลดน้ำหนัก
@@ -61,7 +61,7 @@
 
                 <div class="flex-col3">
                     <div class="flex-col3-2 thaifont">
-                        <a href="http://127.0.0.1:5000/check_bmi" style="text-decoration: none;" class="a-bmi"><h1 class="head-content">ทำไมต้อง Check BMI?</h1></a>
+                        <a href="{{url_for('check')}}" style="text-decoration: none;" class="a-bmi"><h1 class="head-content">ทำไมต้อง Check BMI?</h1></a>
                         <p class="content">อะไรคือ BMI? หลายคนสงสัยทุกครั้ง ที่ได้ยินคำว่า BMI โดย 
                         <br>ย่อมาจาก Body Mass Index หรือที่เรียกว่า “ดัชนีมวลกาย”
                         <br>ซึ่งวิธีการคิดและคำนวณนั้นง่ายมากดังในรูปภาพ การคิดค่าของ
@@ -75,7 +75,7 @@
                 <div class="flex-col4">
                     <img class="img3" src="/static/images/ex001.jpg">
                     <div class="flex-col4-2 thaifont">
-                        <a href="http://127.0.0.1:5000/exercise" style="text-decoration: none;"><h1 class="head-content">การออกกำลังกาย</h1></a>
+                        <a href="{{url_for('exercise_page1')}}" style="text-decoration: none;"><h1 class="head-content">การออกกำลังกาย</h1></a>
                         <p class="content">การทำกิจกรรมที่ได้ออกแรงหรือ
                         <br>เคลื่อนไหวร่างกายซึ่งมีหลากหลายรูปแบบ
                         <br>การออกกำลังกายอย่างสม่ำเสมอก่อให้เกิด
