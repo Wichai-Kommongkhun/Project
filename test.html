@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm_test" method="post" action="index.php" onsubmit="doSubmit(this)">
+        <input type="text" name="test">
+        <input type="submit" name="btn_submit" />
+        <input type="button" onclick="doTestClick()" value="Test Submit" />
+        </form>
+        <script type="text/javascript">
+        function doTestClick() {
+            frm_test.submit(); // submit form ด้วย Javascript
+        };
+        function doSubmit(form) {
+            alert(form.test.value);
+        };
+        </script>
+</body>
+</html>

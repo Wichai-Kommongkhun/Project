@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css-file/check_bmi.css">
     <title>Check BMI</title>
+
+    <script type="text/javascript">
+        function submitClick() {
+            frm_test.submit(); // submit form ด้วย Javascript
+        };
+        function doSubmit(form) {
+            alert(form.test.value);
+        };
+        </script>
 </head>
 <body>
     <div class="box-center">
@@ -35,7 +44,7 @@
                 <input type="number" name="input-1" placeholder="น้ำหนัก(กิโลกรัม)">
                 <br>
                 <input type="number" name="input-2" placeholder="ส่วนสูง(เซนติเมตร)"> <br>
-                <button type="submit" class="btn-submit">คำนวน</button>
+                <button type="submit" class="btn-submit" onclick="submitClick()">คำนวน</button>
                 
             </form>
             <div class="show_bmi">
@@ -49,7 +58,7 @@
                 
             </div>
             <form action="/check_bmi" method="POST" class="reset-form">
-                <button type="submit" name="reset" >🔄</button>
+                <button type="submit" name="reset" onclick="submitClick()">🔄</button>
             </form>
             <p>การคำนวณค่าดัชนีมวลกาย นอกจากเราได้ทราบถึงรูปร่างและสัดส่วนแล้ว 
             <br>ยังทำให้เราทราบถึงความเสี่ยงการเกิดโรคต่างๆ ค่าดัชนีมวลกาย Body Mass Index

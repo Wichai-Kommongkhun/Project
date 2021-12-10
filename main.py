@@ -141,15 +141,24 @@ def check():
 
 @app.route('/Food_search', methods=['POST', 'GET'])
 def search():
-    
+    text_search = ''
     if request.method=="POST" and "search" in request.form:
         search = request.form["search"]
+    else:
+        text_search = 'กรุณาใส่ชื่ออาหาร' 
+        return render_template('Erorr.html',search=text_search)
+    
     if search == "กระเพราอกไก่" or search == "กระเพรา":
         return render_template('food_all/food_menu/menu_1.html')
-
-
-
-
+    elif search == "แกงจืดตำลึงหมูสับ" or search == "ตำลึงหมูสับ":
+        return render_template('food_all/food_menu/menu_2.html')
+    elif search == "ต้มข่าอกไก่":
+        return render_template('food_all/food_menu/menu_3.html')
+    elif search == "แกงเหลือง":
+        return render_template('food_all/food_menu/menu_4.html')
+    else:
+        text_search = "ไม่พบเมนู " + search
+        return render_template('Erorr.html',search=text_search)
 
 if __name__=="__main__":
     app.run(debug=True)
