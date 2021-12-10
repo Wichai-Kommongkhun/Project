@@ -80,7 +80,7 @@ def menu_10():
 
 @app.route("/อกไก่คั่วพริกแกง")
 def menu_10():
-    return render_template('food_all/food_menu/menu_10.html')
+    return render_template('food_all/food_menu/menu_12.html')
 
 
 
