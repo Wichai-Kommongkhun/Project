@@ -75,12 +75,62 @@ def menu_10():
     return render_template('food_all/food_menu/menu_10.html')
 
 @app.route("/ต้มยำเห็ดน้ำใส")
-def menu_10():
+def menu_11():
     return render_template('food_all/food_menu/menu_11.html')
 
-@app.route("/อกไก่คั่วพริกแกง")
-def menu_10():
+@app.route("/ผัดถั่วงอกเต้าหู้")
+def menu_12():
     return render_template('food_all/food_menu/menu_12.html')
+
+@app.route("/แกงจืดมะระยัดไส้")
+def menu_13():
+    return render_template('food_all/food_menu/menu_13.html')
+
+@app.route("/ต้มเลือดหมู")
+def menu_14():
+    return render_template('food_all/food_menu/menu_14.html')
+
+@app.route("/สลัดโรล")
+def menu_15():
+    return render_template('food_all/food_menu/menu_15.html')
+
+@app.route("/ยำวุ้นเส้น")
+def menu_16():
+    return render_template('food_all/food_menu/menu_16.html')
+
+@app.route("/ยำถั่วพู")
+def menu_17():
+    return render_template('food_all/food_menu/menu_17.html')
+
+@app.route("/ยำปลากระป๋อง")
+def menu_18():
+    return render_template('food_all/food_menu/menu_18.html')
+
+@app.route("/ส้มตำไทย")
+def menu_19():
+    return render_template('food_all/food_menu/menu_19.html')
+
+@app.route("/ปลาแซลมอนย่างซอสเทอริยากิ")
+def menu_20():
+    return render_template('food_all/food_menu/menu_20.html')
+
+@app.route("/แกงเขียวหวานอกไก่")
+def menu_21():
+    return render_template('food_all/food_menu/menu_21.html')
+
+@app.route("/ปลาแซลมอนย่างซอสเทอริยากิ")
+def menu_22():
+    return render_template('food_all/food_menu/menu_22.html')
+
+@app.route("/ปลาแซลมอนย่างซอสเทอริยากิ")
+def menu_23():
+    return render_template('food_all/food_menu/menu_23.html')
+
+@app.route("/ปลาแซลมอนย่างซอสเทอริยากิ")
+def menu_24():
+    return render_template('food_all/food_menu/menu_24.html')
+
+
 
 
 
