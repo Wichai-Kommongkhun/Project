@@ -3,15 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.box-center{
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    margin: 0% 0 0 0;
-    position: absolute;
-}
-
 nav{
     display: flex;
     justify-content: space-around;
@@ -114,68 +105,96 @@ nav{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.box_1 {
+.container{
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.col1 {
+    margin: 20px 0 20px 0;
+    display: flex;
     width: 100%;
-    height: 80%;
-    background-color: rgb(104, 105, 102);
-    margin: 3% 0 0 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
-.-img{
-    width: 820px;
-    height: 680px;
-    margin: 2% 0 0 5%;
-
+.-img {
+    display: flex;
+    justify-items: center;
+    max-width: 580px;
 }
-
-.png-1 {
-    margin: 21% 0 0 60%;
-    width: 500px;
-    height: 300px;
+.col1-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px 0 25px;
 }
-.box_1 h1{
-    position: absolute;
-    margin:2% 0 0 53%;
-    color: rgb(212, 211, 211);
-    font-size: 50px;
-
+h1 {
+    font-size: 25px;
 }
-.box_1 p {
-    position: absolute;
-    margin:20% 0 0 50%;
-    color: rgb(212, 211, 211);
-    font-size: 28px;
-}
-
 .from-box {
-    margin: 7% 0 0 50%;
-    width: 30%;
-    height: 45%;
-    background-color: none;
-    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-.from-box input {
-    width: 45%;
-    height: 15%;
-    margin: 2% 0 0% 10%;
-    text-align: center;
-    font-size: 26px;
+input {
+    font-size: 30px;
     font-weight: 700;
-
+    text-align: center;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
 }
-
 .btn-submit {
-    width: 15%;
-    height: 15%;
-    margin: 1% 0 0 40%;
+    width: 50%;
     cursor: pointer;
     font-weight: 600;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.col1-3 {
+    border: solid beige;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+}
+p1 {
+    font-weight: 200;
+    font-size: 30px;
+    color: azure;
+    text-align: center;
+}
+p2 {
+    font-weight: 200;
     font-size: 20px;
+    color: azure;
+    text-align: center;
+}
+.show_bmi {
+    font-weight: 600;
+    color: rgb(122, 224, 96);
+}
+.p-bmi{
+    color: beige;
+    font-size: 50px;
 }
 
-.reset-form{
-    margin: 17% 0 0 83%;
-    position: absolute;
+.p-check{
+    color: antiquewhite;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
 }
 .reset-form button{
     width: 100%;
@@ -183,80 +202,33 @@ nav{
     font-size: 22px;
     background-color: rgb(34, 34, 34);
 }
-
-.show_bmi {
-    border: solid beige;
-
-    margin: 7% 0 0 70%;
-    position: absolute;
-    width: 15%;
-    height: 25%;
-    background-color: rgb(34, 34, 34);
-}
-
-.show_bmi p {
-    margin: 0% 0 0 15%;
-    font-weight: 600;
-    color: rgb(122, 224, 96);
-    position: absolute;
-}
-.p-bmi{
-    margin: 18% 0 0 25%;
-    color: beige;
-    font-size: 60px;
-}
-
-.p-check{
-    color: antiquewhite;
-    font-size: 45px;
-    margin: 0 0 0 7%;
-    text-align: center;
-    font-weight: 400;
-}
-
-
-
-/* end txt */
-.box-end {
+.col2 {
     width: 100%;
-    height: 50%;
-    background-color: rgb(70, 126, 86);
-    margin: 5% 0 0% 0;
-    position: absolute;
-}
-
-
-
-.end-txt{
-    position: absolute;
-    margin: 2% 0 0 6%;
-    color: white;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -50px;
+    padding: 30px 0 30px 0;
+    background-color: rgb(245, 214, 135);
+    border-radius: 40px;
 }
+/* responsive */
 
-.end-txt a{
-    position: absolute;
-    margin: 2% 0 0 0%;
-    color: white;
-    font-size: 25px;
-}
+@media (max-width: 1300px){
+    .col1 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .col1-2 {
+        margin: 20px 0 20px 0;
+    }
+    .col1-3 {
+        margin-bottom: 45px;
+    }
 
-.end-txt1{
-    margin: 2% 0 0 43%;
-    position: absolute;
-    color: white;
-    font-size: 25px;
-}
-
-.end-txt2 {
-    margin: 2% 0 0 70%;
-    position: absolute;
-    color: white;
-    font-size: 25px;
-}
-
-.end-txt2 a {
-    text-decoration: none;
-    font-size: 25px;
-    color: rgb(255, 253, 253);
 }
