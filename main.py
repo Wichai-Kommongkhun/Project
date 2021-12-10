@@ -142,17 +142,42 @@ def menu_26():
 def menu_27():
     return render_template('food_all/food_menu/menu_27.html')
 
-@app.route("/ข้าวไข่ข้นข้าวโพด")
+@app.route("/Sour Banked Salmon")
 def menu_28():
     return render_template('food_all/food_menu/menu_28.html')
 
-@app.route("/ข้าวไข่ข้นข้าวโพด")
+@app.route("/ไข่อบอะโวคาโด")
 def menu_29():
     return render_template('food_all/food_menu/menu_29.html')
 
-@app.route("/ข้าวไข่ข้นข้าวโพด")
+@app.route("/เปาะเปี๊ยะลาบลุยสวน")
 def menu_30():
     return render_template('food_all/food_menu/menu_30.html')
+
+@app.route("/สลัดปลาแซลมอนย่าง")
+def menu_31():
+    return render_template('food_all/food_menu/menu_31.html')
+
+@app.route("/Salad Cottage Cheese")
+def menu_32():
+    return render_template('food_all/food_menu/menu_32.html')
+
+@app.route("/couscous salad with tofu")
+def menu_33():
+    return render_template('food_all/food_menu/menu_33.html')
+
+@app.route("/Acai Bowl")
+def menu_34():
+    return render_template('food_all/food_menu/menu_34.html')
+
+@app.route("/Pink Smoothie")
+def menu_35():
+    return render_template('food_all/food_menu/menu_35.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_36():
+    return render_template('food_all/food_menu/menu_36.html')
+
 
 
 
