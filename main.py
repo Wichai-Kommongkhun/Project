@@ -129,6 +129,30 @@ def menu_23():
 @app.route("/ข้าวไข่ข้นข้าวโพด")
 def menu_24():
     return render_template('food_all/food_menu/menu_24.html')
+    
+@app.route("/Chicken Panzanella Salad")
+def menu_25():
+    return render_template('food_all/food_menu/menu_25.html')
+
+@app.route("/มะเขือเทศผัดไข่")
+def menu_26():
+    return render_template('food_all/food_menu/menu_26.html')
+
+@app.route("/แซนวิชไข่ต้มไส้ทะลัก")
+def menu_27():
+    return render_template('food_all/food_menu/menu_27.html')
+
+@app.route("/ข้าวไข่ข้นข้าวโพด")
+def menu_28():
+    return render_template('food_all/food_menu/menu_28.html')
+
+@app.route("/ข้าวไข่ข้นข้าวโพด")
+def menu_29():
+    return render_template('food_all/food_menu/menu_29.html')
+
+@app.route("/ข้าวไข่ข้นข้าวโพด")
+def menu_30():
+    return render_template('food_all/food_menu/menu_30.html')
 
 
 
