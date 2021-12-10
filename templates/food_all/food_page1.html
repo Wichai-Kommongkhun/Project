@@ -37,7 +37,7 @@
                 <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
                 <li><a href="{{url_for('food')}}">FOOD</a></li>
                 <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
-                <li><a href="#">#</a></li>
+                
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -78,7 +78,7 @@
                             <div class="card-body">
                             <h5 class="card-title">ข้าวกระเพราะอกไก่</h5>
                             <p class="card-text">อาหารยอดนิยมของคนไทยที่หาซื้อได้ทุกที่ก็สามารถนำมาปรุ่งเป็นเมนูอาหารคลีนได้ไม่ยาก..</p>
-                            <a href="http://127.0.0.1:5000/กระเพาอกไก่" class="btn btn-primary">วิธีทำ</a>
+                            <a href="{{url_for('menu_1')}}" class="btn btn-primary">วิธีทำ</a>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                             <div class="card-body">
                             <h5 class="card-title">แกงจืดตำลึงหมูสับ</h5>
                             <p class="card-text">แกงจืดตำลึงหมูสับ เป็นวัตถุดิบอาหารคลีนที่นิยมอย่างมากเพราะว่ามันวัตถุดิบที่สามารถหาซื้อได้ง่าย..</p>
-                            <a href="http://127.0.0.1:5000/แกงจืดตำลึงหมูสับ" class="btn btn-primary">วิธีทำ</a>
+                            <a href="{{url_for('menu_2')}}" class="btn btn-primary">วิธีทำ</a>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                             <div class="card-body">
                             <h5 class="card-title">ต้มข่าอกไก่</h5>
                             <p class="card-text">ต้มข่าไก่ เป็นอาหารที่นิยมมาช้านานเป็นเมนูที่คนไทยรู้จักดี และทำได้ง่ายวัตุดิบมีราคาถูก..</p>
-                            <a href="http://127.0.0.1:5000/ต้มข่าอกไก่" class="btn btn-primary">วิธีทำ</a>
+                            <a href="{{url_for('menu_3')}}" class="btn btn-primary">วิธีทำ</a>
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
                             <div class="card-body">
                             <h5 class="card-title">แกงเหลืองสับปะรด</h5>
                             <p class="card-text">แกงเหลือง เป็นอาหารที่ใครก็รู้จัก เราสามารถทำแบบคลีนได้แต่ก็อร่อยเหมือนเดิม ..</p>
-                            <a href="http://127.0.0.1:5000/แกงเหลืองสับปะรด" class="btn btn-primary">วิธีทำ</a>
+                            <a href="{{url_for('menu_4')}}" class="btn btn-primary">วิธีทำ</a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                         <div class="card-body">
                         <h5 class="card-title">ซุบหน่อไม้</h5>
                         <p class="card-text">ซุบหน่อไม้ เป็นเมนูที่ใครๆหลายคนเคยกิน มีอยู่ทั่วในประเทศไทย สามารถหากินได้ง่าย..</p>
-                        <a href="http://127.0.0.1:5000/ซุบหน่อไม้" class="btn btn-primary">วิธีทำ</a>
+                        <a href="{{url_for('menu_5')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                         <div class="card-body">
                         <h5 class="card-title">แกงเลียง</h5>
                         <p class="card-text">แกงเลียงเป็นเมนูอาหารที่นิยม ทุกบ้านต้องเคยรับประทานเป็นที่สุด เป็นอาหารที่มีสมุนไพร..</p>
-                        <a href="http://127.0.0.1:5000/แกงเลียง" class="btn btn-primary">วิธีทำ</a>
+                        <a href="{{url_for('menu_6')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                         <div class="card-body">
                         <h5 class="card-title">ส้มตำผลไม้</h5>
                         <p class="card-text">ส้มตำ อาหารรสเด็ดที่ใครได้ลิ้มรส ก็จะติดใจอย่างมาก และสามารถหาซื้อวัตถุดิบได้ง่าย..</p>
-                        <a href="http://127.0.0.1:5000/ส้มตำผลไม้" class="btn btn-primary">วิธีทำ</a>
+                        <a href="{{url_for('menu_7')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                         <div class="card-body">
                         <h5 class="card-title">ห่อหมกปลาดอรี่</h5>
                         <p class="card-text">ห่อหมกปลาดอรี่ เป็นอาหารพื้นบ้านที่ เราสามารถทำแบบคลีนได้แต่ก็อร่อยเหมือนเดิม และมีราคาที่ถูก..</p>
-                        <a href="http://127.0.0.1:5000/ห่อหมกปลาดอรี่" class="btn btn-primary">วิธีทำ</a>
+                        <a href="{{url_for('menu_8')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                         <div class="card-body">
                         <h5 class="card-title">น้ำพริกอ่องอกไก่</h5>
                         <p class="card-text">น้ำพริกอ่องเป็นน้ำพริกซึ่งนิยมรับประทานกัน ในภาคเหนือของประเทศไทยเป็นอาหารที่มีสมุนไพร..</p>
-                        <a href="http://127.0.0.1:5000/น้ำพริกอ่องอกไก่" class="btn btn-primary">วิธีทำ</a>
+                        <a href="{{url_for('menu_9')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                         <div class="card-body">
                         <h5 class="card-title">อกไก่คั่วพริกแกง</h5>
                         <p class="card-text">อกไก่คั่วพริกแกง อาหารไทยที่ใช้พริกแกง พริกแกงคือส่วนหนึ่งของอาหารหลากหลายชนิดเป็นที่นิยม..</p>
-                        <a href="http://127.0.0.1:5000/อกไก่คั่วพริกแกง" class="btn btn-primary">วิธีทำ</a>
+                        <a href="{{url_for('menu_10')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +211,7 @@
                         <div class="card-body">
                         <h5 class="card-title">ต้มยำเห็ดน้ำใส</h5>
                         <p class="card-text">เห็ดเป็นวัตถุดิบอย่างหนึ่งที่ผู้คนส่วนมาก ชอบรับประทาน และสามารถหาได้ง่าย..</p>
-                        <a href="http://127.0.0.1:5000/ต้มยำเห็ดน้ำใส" class="btn btn-primary">วิธีทำ</a>
+                        <a href="{{url_for('menu_11')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
                         <div class="card-body">
                         <h5 class="card-title">ผัดถั่วงอกเต้าหู้</h5>
                         <p class="card-text">อาหารจานนี้สะดวกและรวดเร็ว วัตถุดิบสามารถหาได้ง่าย และราคาไม่แพงเหมาะสำ..</p>
-                        <a href="http://127.0.0.1:5000/ผัดถั่วงอกเต้าหู้" class="btn btn-primary">วิธีทำ</a>
+                        <a href="{{url_for('menu_12')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -242,12 +242,12 @@
                 <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
                     <div class="btn-group" role="group" aria-label="First group">
 
-                        <a class="btn btn-success" href="http://127.0.0.1:5000/food" role="button">1</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page2" role="button">2</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page3" role="button">3</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page4" role="button">4</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page5" role="button">5</a>
-                        <a class="btn btn-secondary" href="http://127.0.0.1:5000/food_page2" role="button">></a>
+                        <a class="btn btn-success" href="{{url_for('food')}}" role="button">1</a>
+                        <a class="btn btn-light" href="{{url_for('food_page2')}}" role="button">2</a>
+                        <a class="btn btn-light" href="{{url_for('food_page3')}}" role="button">3</a>
+                        <a class="btn btn-light" href="{{url_for('food_page4')}}" role="button">4</a>
+                        <a class="btn btn-light" href="{{url_for('food_page5')}}" role="button">5</a>
+                        <a class="btn btn-secondary" href="{{url_for('food_page2')}}" role="button">></a>
                     </div>
                 </div>
             </div>

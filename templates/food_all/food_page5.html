@@ -36,7 +36,13 @@
         
         <div class="container">
             <div class="title-food">
-                
+                <h1>FOOD PSIT</h1>
+                <div class="seach">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="ใส่ชื่ออาหาร" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">ค้นหา</button>
+                      </form>
+                </div>
             </div>
             <div class="row">
                     <!-- เมนูที่1 -->
@@ -209,12 +215,12 @@
             <div class="page-n">
                 <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
                     <div class="btn-group" role="group" aria-label="First group">
-                        <a class="btn btn-secondary" href="http://127.0.0.1:5000/food_page4" role="button"><</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food" role="button">1</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page2" role="button">2</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page3" role="button">3</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page4" role="button">4</a>
-                        <a class="btn btn-success" href="http://127.0.0.1:5000/food_page5" role="button">5</a>
+                        <a class="btn btn-secondary" href="{{url_for('food_page4')}}" role="button"><</a>
+                        <a class="btn btn-light" href="{{url_for('food')}}" role="button">1</a>
+                        <a class="btn btn-light" href="{{url_for('food_page2')}}" role="button">2</a>
+                        <a class="btn btn-light" href="{{url_for('food_page3')}}" role="button">3</a>
+                        <a class="btn btn-light" href="{{url_for('food_page4')}}" role="button">4</a>
+                        <a class="btn btn-success" href="{{url_for('food_page5')}}" role="button">5</a>
                     </div>
                 </div>
             </div>
