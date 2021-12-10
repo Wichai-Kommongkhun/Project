@@ -74,6 +74,14 @@ def menu_9():
 def menu_10():
     return render_template('food_all/food_menu/menu_10.html')
 
+@app.route("/ต้มยำเห็ดน้ำใส")
+def menu_10():
+    return render_template('food_all/food_menu/menu_11.html')
+
+@app.route("/อกไก่คั่วพริกแกง")
+def menu_10():
+    return render_template('food_all/food_menu/menu_10.html')
+
 
 
 
