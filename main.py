@@ -107,7 +107,7 @@ def exercise_set3():
 
 
 
-@app.route('/ออกกำลังกายต้นเเขน4')
+@app.route('/ออกกำลังกายกล้ามเนื้อหน้าอก')
 def exercise_set4():
     return render_template('exercise_all/exercise_set/exercise_set4.html')
 
@@ -156,6 +156,8 @@ def search():
         return render_template('food_all/food_menu/menu_3.html')
     elif search == "แกงเหลือง":
         return render_template('food_all/food_menu/menu_4.html')
+    elif search == "ซุบหน่อไม้":
+        return render_template('food_all/food_menu/menu_5.html')
     else:
         text_search = "ไม่พบเมนู " + search
         return render_template('Erorr.html',search=text_search)
