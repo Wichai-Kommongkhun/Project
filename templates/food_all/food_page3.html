@@ -9,6 +9,13 @@
      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="
      sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css-file/home_footer food.css">
+    <link rel="stylesheet" href="/static/css-file/menubar food.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Food Recommend</title>
     <style>
         .card img {
@@ -21,24 +28,20 @@
 <body>
 
     <div class="box-center">
-        <nav >
-            <div class="logo">
-                <h4>HEALTH IS FUN</h4>
-            </div>
-            <ul class="nav-links">
-                <li><a href="{{url_for('home')}}">HOME</a></li>
-                <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
-                <li><a href="{{url_for('food')}}">FOOD</a></li>
-                <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
-                <li><a href="#">#</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                
-            </div>
-        </nav>
+        <nav>
+            <div class="logo">HEALTH IS FUN</div>
+             <input type="checkbox" id="click">
+             <label for="click" class="menu-btn">
+               <i class="fas fa-bars"></i>
+             </label>
+             <ul>
+               <li><a href="{{url_for('home')}}">Home</a></li>
+               <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
+               <li><a href="{{url_for('food')}}" class="active">FOOD</a></li>
+               <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
+               
+             </ul>
+          </nav>
     
         
         <div class="container">
@@ -60,7 +63,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Chicken Panzanella Salad</h5>
                             <p class="card-text"> Chicken Panzanella Salad สลัดแสนอร่อย มีวัตถุดิบไม่กี่อย่างก็สามารถทำได้เเล้ว ช่วยส่ง..</p>
-                            <a href="http://127.0.0.1:5000/Chicken Panzanella Salad" class="btn btn-primary">วิธีทำ</a>
+                            <a href="{{url_for('menu_25')}}" class="btn btn-primary">วิธีทำ</a>
                             </div>
                         </div>
                     </div>
@@ -73,7 +76,7 @@
                             <div class="card-body">
                             <h5 class="card-title">มะเขือเทศผัดไข่</h5>
                             <p class="card-text">มะเขือเทศผัดไข่ แสนอร่อย สามารถทำได้ง่ายๆ และใช้วัตถุดิบน้อย ช่วยส่งเสริมสุขภาพ..</p>
-                            <a href="http://127.0.0.1:5000/มะเขือเทศผัดไข่" class="btn btn-primary">วิธีทำ</a>
+                            <a href="{{url_for('menu_26')}}" class="btn btn-primary">วิธีทำ</a>
                             </div>
                         </div>
                     </div>
@@ -86,34 +89,33 @@
                             <div class="card-body">
                             <h5 class="card-title">แซนวิชไข่ต้มไส้ทะลัก</h5>
                             <p class="card-text">แซนวิชไข่ต้มไส้ทะลัก แสนอร่อย สามารถทำได้ง่ายๆ และใช้วัตถุดิบน้อย ช่วยส่งเสริมสุขภาพ..</p>
-                            <a href="http://127.0.0.1:5000/แซนวิชไข่ต้มไส้ทะลัก" class="btn btn-primary">วิธีทำ</a>
+                            <a href="{{url_for('menu_27')}}" class="btn btn-primary">วิธีทำ</a>
                             </div>
                         </div>
                     </div>
-
-
+                    
                     <!-- เมนูที่4 -->
                     <div class="col-md-3">
                         <br>
                         <div class="card" style="width: 18rem;">
-                            <img src="/static/images/Sour Banked Salmon2.jpg" class="card-img-top" alt="...">
+                            <img src="/static/images/Sour Banked Salmon.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                            <h5 class="card-title">Sour Banked Salmone</h5>
+                            <h5 class="card-title">Sour Banked Salmon</h5>
                             <p class="card-text">ปลา แซลมอนที่มีสารอาหารมากมาย สามารถทำได้ง่ายๆ โดยใช้วัตถุดิบไม่กี่อย่างเท่านั้น..</p>
-                            <a href="http://127.0.0.1:5000/Sour Banked Salmon" class="btn btn-primary">วิธีทำ</a>
+                            <a href="{{url_for('menu_28')}}" class="btn btn-primary">วิธีทำ</a>
                             </div>
                         </div>
                     </div>
 
-                <!-- เมนูที่5 -->
-                <div class="col-md-3">
+                 <!-- เมนูที่5 -->
+                 <div class="col-md-3">
                     <br>
                     <div class="card" style="width: 18rem;">
                         <img src="/static/images/ไข่อบอะโวคาโด.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">ไข่อบอะโวคาโด</h5>
                         <p class="card-text">อะโวคาโดของกินที่ใครหลายๆคนเคยลอง มีวิตามินมากมาย และช่วยส่งเสริมสุขภาพ..</p>
-                        <a href="http://127.0.0.1:5000/ไข่อบอะโวคาโด" class="btn btn-primary">วิธีทำ</a>
+                        <a href="{{url_for('menu_29')}}" class="btn btn-primary">วิธีทำ</a>   
                         </div>
                     </div>
                 </div>
@@ -125,8 +127,8 @@
                         <img src="/static/images/เปาะเปี๊ยะลาบลุยสวน.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">เปาะเปี๊ยะลาบลุยสวน</h5>
-                        <p class="card-text">อาหารที่คลีนไม่มากแต่ก็คลีน มีวิตามินจากผักมากมาย วัตถุดิบหาง่ายสามารถทำเก็บไว้..</p>
-                        <a href="http://127.0.0.1:5000/เปาะเปี๊ยะลาบลุยสวน" class="btn btn-primary">วิธีทำ</a>
+                        <p class="card-text">อาหารที่คลีนไม่มากแต่ก็คลีน มีวิตามินจากผักมากมาย วัตถุดิบหาง่ายสามารถ..</p>
+                        <a href="{{url_for('menu_30')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -222,18 +224,58 @@
             <div class="page-n">
                 <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
                     <div class="btn-group" role="group" aria-label="First group">
-                        <a class="btn btn-secondary" href="http://127.0.0.1:5000/food_page2" role="button"><</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food" role="button">1</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page2" role="button">2</a>
-                        <a class="btn btn-success" href="http://127.0.0.1:5000/food_page3" role="button">3</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page4" role="button">4</a>
-                        <a class="btn btn-light" href="http://127.0.0.1:5000/food_page5" role="button">5</a>
-                        <a class="btn btn-secondary" href="http://127.0.0.1:5000/food_page4" role="button">></a>
+                        <a class="btn btn-secondary" href="{{url_for('food_page2')}}" role="button"><</a>
+                        <a class="btn btn-light" href="{{url_for('food')}}" role="button">1</a>
+                        <a class="btn btn-light" href="{{url_for('food_page2')}}" role="button">2</a>
+                        <a class="btn btn-success" href="{{url_for('food_page3')}}" role="button">3</a>
+                        <a class="btn btn-light" href="{{url_for('food_page4')}}" role="button">4</a>
+                        <a class="btn btn-light" href="{{url_for('food_page5')}}" role="button">5</a>
+                        <a class="btn btn-secondary" href="{{url_for('food_page4')}}" role="button">></a>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+    <footer class="footer" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>about</h4>
+                    <ul>
+                        <li class="thaifont" ><a href="https://www.it.kmitl.ac.th/th/" target="_blank">คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</a></li>
+                        <li class="thaifont"><a href="https://www.it.kmitl.ac.th/th/about/travel/" target="_blank">เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>special thank</h4>
+                    <ul>
+                        <li><a href="https://www.si.mahidol.ac.th/" target="_blank">Mahidol</a></li>
+                        <li><a href="https://www.amara-clinic.com/what-is-bmi/" target="_blank">AmaraClinic</a></li>
+                        <li><a href="https://twitter.com/SiPHHospital/status/1154934324132642816?s=20" target="_blank">Image-1</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>email & contact us</h4>
+                    <ul>
+                        <li><a href="https://mail.google.com/" target="_blank">64070039@it.kmitl.ac.th</a></li>
+                        <li><a href="https://mail.google.com/" target="_blank">64070180@it.kmitl.ac.th</a></li>
+                        <li><a href="https://mail.google.com/" target="_blank">64070191@it.kmitl.ac.th</a></li>
+                        <li><a href="https://mail.google.com/" target="_blank">64070220@it.kmitl.ac.th</a></li>
+                     <li><a href="https://mail.google.com/" target="_blank">64070230@it.kmitl.ac.th</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>social</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/kmitlofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/kmitlofficial?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kmitlofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
