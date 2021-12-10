@@ -173,6 +173,10 @@ def exercise_set4():
 def exercise_set5():
     return render_template('exercise_all/exercise_set/exercise_set5.html')
 
+@app.route('/ออกกำลังกายกล้ามเเขน')
+def exercise_set6():
+    return render_template('exercise_all/exercise_set/exercise_set6.html')
+
 
 @app.route('/check_bmi' , methods=['POST','GET'])
 def check():
