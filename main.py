@@ -138,7 +138,7 @@ def check():
     return render_template('check_bmi.html', show_bmi=show_bmi , message=message)
 
 
-
+# search menu ยังทำไม่เสร็จ
 @app.route('/Food_search', methods=['POST', 'GET'])
 def search():
     text_search = ''
@@ -158,6 +158,16 @@ def search():
         return render_template('food_all/food_menu/menu_4.html')
     elif search == "ซุบหน่อไม้":
         return render_template('food_all/food_menu/menu_5.html')
+    elif search == "แกงเลียง":
+        return render_template('food_all/food_menu/menu_6.html')
+    elif search == "ส้มตำผลไม้":
+        return render_template('food_all/food_menu/menu_7.html')
+    elif search == "ห่อหมกปลาดอรี่":
+        return render_template('food_all/food_menu/menu_8.html')
+    elif search == "น้ำพริกอ่องอกไก่":
+        return render_template('food_all/food_menu/menu_9.html')
+    elif search == "อกไก่คั่วพริกแกง":
+        return render_template('food_all/food_menu/menu_10.html')
     else:
         text_search = "ไม่พบเมนู " + search
         return render_template('Erorr.html',search=text_search)
