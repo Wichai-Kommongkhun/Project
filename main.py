@@ -118,15 +118,15 @@ def menu_20():
 def menu_21():
     return render_template('food_all/food_menu/menu_21.html')
 
-@app.route("/ปลาแซลมอนย่างซอสเทอริยากิ")
+@app.route("/Gnocchi with Tomato Sauce")
 def menu_22():
     return render_template('food_all/food_menu/menu_22.html')
 
-@app.route("/ปลาแซลมอนย่างซอสเทอริยากิ")
+@app.route("/Tuna Corn Salad")
 def menu_23():
     return render_template('food_all/food_menu/menu_23.html')
 
-@app.route("/ปลาแซลมอนย่างซอสเทอริยากิ")
+@app.route("/ข้าวไข่ข้นข้าวโพด")
 def menu_24():
     return render_template('food_all/food_menu/menu_24.html')
 
