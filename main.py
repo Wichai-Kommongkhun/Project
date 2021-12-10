@@ -111,6 +111,9 @@ def exercise_set3():
 def exercise_set4():
     return render_template('exercise_all/exercise_set/exercise_set4.html')
 
+@app.route('/ออกกำลังกายกล้ามเนื้อหลัง')
+def exercise_set5():
+    return render_template('exercise_all/exercise_set/exercise_set5.html')
 
 
 @app.route('/check_bmi' , methods=['POST','GET'])
@@ -168,6 +171,26 @@ def search():
         return render_template('food_all/food_menu/menu_9.html')
     elif search == "อกไก่คั่วพริกแกง":
         return render_template('food_all/food_menu/menu_10.html')
+    elif search == "ต้มยำเห็ดน้ำใส":
+        return render_template('food_all/food_menu/menu_11.html')
+    elif search == "ผัดถั่วงอกเต้าหู้":
+        return render_template('food_all/food_menu/menu_12.html')
+    elif search == "แกงจืดมะระยัดไส้":
+        return render_template('food_all/food_menu/menu_13.html')
+    elif search == "ต้มเลือดหมู":
+        return render_template('food_all/food_menu/menu_14.html')
+    elif search == "สลัดโรล":
+        return render_template('food_all/food_menu/menu_15.html')
+    elif search == "ยำวุ้นเส้น":
+        return render_template('food_all/food_menu/menu_16.html')
+    elif search == "ยำถั่วพู":
+        return render_template('food_all/food_menu/menu_17.html')
+    elif search == "ยำปลากระป๋อง":
+        return render_template('food_all/food_menu/menu_18.html')
+    elif search == "ส้มตำไทย":
+        return render_template('food_all/food_menu/menu_19.html')
+    elif search == "ปลาแซลมอนย่างซอสเทอริยากิ":
+        return render_template('food_all/food_menu/menu_20.html')
     else:
         text_search = "ไม่พบเมนู " + search
         return render_template('Erorr.html',search=text_search)
