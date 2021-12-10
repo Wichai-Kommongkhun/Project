@@ -139,7 +139,13 @@ def check():
 
 
 
-
+@app.route('/Food_search', methods=['POST', 'GET'])
+def search():
+    
+    if request.method=="POST" and "search" in request.form:
+        search = request.form["search"]
+    if search == "กระเพราอกไก่" or search == "กระเพรา":
+        return render_template('food_all/food_menu/menu_1.html')
 
 
 
