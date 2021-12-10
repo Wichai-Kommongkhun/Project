@@ -15,8 +15,8 @@
      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <script src="/static/food.js"></script>
      <script src="/static/app.js"></script>
-    <link rel="stylesheet" href="/static/css-file/home_footer.css">
-    <link rel="stylesheet" href="/static/css-file/menubar.css">
+     <link rel="stylesheet" href="/static/css-file/home_footer food.css">
+    <link rel="stylesheet" href="/static/css-file/menubar food.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,21 +33,22 @@
     </style>
 </head>
 <body>
+    <nav>
+        <div class="logo">HEALTH IS FUN</div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+           <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+           <li><a href="{{url_for('home')}}">Home</a></li>
+           <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
+           <li><a href="{{url_for('food')}}" class="active">FOOD</a></li>
+           <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
+           
+         </ul>
+      </nav>
     <div class="box-center">
-        <nav>
-            <div class="logo">HEALTH IS FUN</div>
-             <input type="checkbox" id="click">
-             <label for="click" class="menu-btn">
-               <i class="fas fa-bars"></i>
-             </label>
-             <ul>
-               <li><a href="{{url_for('home')}}">Home</a></li>
-               <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
-               <li><a href="{{url_for('food')}}" class="active">FOOD</a></li>
-               <li><a href="{{url_for('exercise_page1')}}">EXERCISE</a></li>
-               <li><a href="#">#</a></li>
-             </ul>
-          </nav>
+        
     
         
         <div class="container">
