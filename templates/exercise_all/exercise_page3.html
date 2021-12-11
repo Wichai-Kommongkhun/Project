@@ -9,12 +9,19 @@
      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="
      sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="/static/css-file/home_footer.css">
-    <link rel="stylesheet" href="/static/css-file/menubar.css">
+     <link rel="stylesheet" href="/static/css-file/home_footer  exercise.css">
+    <link rel="stylesheet" href="/static/css-file/menubar exercise.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+      .card img {
+        width: 550px;
+        height: 400px;
+      }
+    </style>
     <title>Exercise</title>
 </head>
 <body>
@@ -31,7 +38,7 @@
            <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
            <li><a href="{{url_for('food')}}">FOOD</a></li>
            <li><a href="{{url_for('exercise_page1')}}" class="active">EXERCISE</a></li>
-           <li><a href="#">#</a></li>
+           
          </ul>
       </nav>
     
@@ -112,22 +119,22 @@
    
     
         </div>
+
         <div class="next-back" >
-            <div class="page-n">
-                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group" role="group" aria-label="First group">
+          <div class="page-n">
+              <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                  <div class="btn-group" role="group" aria-label="First group">
+    
+                    <a class="btn btn-light" href="{{url_for('exercise_page1')}}" role="button">1</a>
+                    <a class="btn btn-light" href="{{url_for('exercise_page2')}}" role="button">2</a>
+                    <a class="btn btn-danger" href="{{url_for('exercise_page3')}}" role="button">3</a>
+                  </div>
+              </div>
+          </div>
+      </div>
 
-                      <a class="btn btn-secondary" href="{{url_for('exercise_page2')}}" role="button"><</a>
-                      <a class="btn btn-light" href="{{url_for('exercise_page1')}}" role="button">1</a>
-                      <a class="btn btn-light" href="{{url_for('exercise_page2')}}" role="button">2</a>
-                      <a class="btn btn-danger" href="{{url_for('exercise_page3')}}" role="button">3</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
-    </div>
+  </div>
     <footer class="footer" style="margin-top: 100px;">
       <div class="container">
           <div class="row">
@@ -166,6 +173,7 @@
                   </div>
               </div>
           </div>
+      </div>
   </footer>
 </body>
 </html>

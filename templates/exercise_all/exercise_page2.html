@@ -9,8 +9,8 @@
      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="
      sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="/static/css-file/home_footer.css">
-    <link rel="stylesheet" href="/static/css-file/menubar.css">
+     <link rel="stylesheet" href="/static/css-file/home_footer  exercise.css">
+    <link rel="stylesheet" href="/static/css-file/menubar exercise.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
       }
 
       .card img {
-        width: 600px;
+        width: 550px;
         height: 400px;
       }
     </style>
@@ -32,145 +32,145 @@
 <body>
 
     <div class="box-center">
-      <nav>
-        <div class="logo">HEALTH IS FUN</div>
-         <input type="checkbox" id="click">
-         <label for="click" class="menu-btn">
-           <i class="fas fa-bars"></i>
-         </label>
-         <ul>
-           <li><a href="{{url_for('home')}}">Home</a></li>
-           <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
-           <li><a href="{{url_for('food')}}">FOOD</a></li>
-           <li><a href="{{url_for('exercise_page1')}}" class="active">EXERCISE</a></li>
-           <li><a href="#">#</a></li>
-         </ul>
-      </nav>
-    
-        
-        <div class="container">
-            <div class="title-food">
-              <div class="title-exercise">
-              
-                <h1>EXERCISE PSIT</h1>
-                
-            </div>
-            </div>
+        <nav>
+          <div class="logo">HEALTH IS FUN</div>
+          <input type="checkbox" id="click">
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('check')}}">CHECK BMI</a></li>
+            <li><a href="{{url_for('food')}}">FOOD</a></li>
+            <li><a href="{{url_for('exercise_page1')}}" class="active">EXERCISE</a></li>
             
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                  <div class="card">
-                    <a href="{{url_for('exercise_set5')}}">
-                    <img src="/static/images/กล้ามเนื้อหลัง1.jpg" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                      <a href="{{url_for('exercise_set5')}}">
-                      <h5 class="card-title">ออกกำลังกายกล้ามเนื้อหลัง</h5>
-                      <p class="card-text">เเนะนำการออกกำลังกายและบริหารกล้ามเนื้อต้นหลังเพื่อให้ลำตัวเเละบุคลิกการนั่งหรือการยืนของคุณมั่นใจมากขึ้น
-                         โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ
-                      </p>
-                    </a>
-                    </div>
-                  </div>
-                </div>
-
-<!-- ออกกำลังกายกล้ามเเขน -->
-                <div class="col">
-                  <div class="card">
-                    <a href="{{url_for('exercise_set6')}}">
-                    <img src="/static/images/กล้ามเนื้อเเขน00.jpg" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                      <a href="{{url_for('exercise_set6')}}">
-                      <h5 class="card-title">ออกกำลังกายกล้ามเนื้อเเขน</h5>
-                      <p class="card-text">เเนะนำการออกกำลังกายกล้ามเนื้อเเขนที่จะช่วยคุณลดไขมันเเละเพิ่มกล้ามเนื้อ โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ.</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-<!-- คาร์ดิโอ    -->
-
-<!-- ออกกำลังกายเเบบคาร์ดิโอ -->
-                <div class="col">
-                  <div class="card">
-                    <a href="{{url_for('exercise_set7')}}">
-                    <img src="/static/images/exercise_test.jpg" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                      <a href="{{url_for('exercise_set7')}}">
-                      <h5 class="card-title">ท่าออกกำลังกายเเบบคาร์ดิโอ</h5>
-                      <p class="card-text">เเนะนำการออกลังกายเเบบคาร์ดิโอเพื่อให้คุณลดไขมันใต้ผิวหนังทุกส่วนของร่างกาย โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ.
-                      </p></a>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col">
-                  <div class="card">
-                    <img src="/static/images/exercise_test.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div>
-
+          </ul>
+        </nav>
+      
+          
+        <div class="container">
+              <div class="title-food">
+                <div class="title-exercise">
+                  <h1>EXERCISE PSIT</h1>
+              </div>
+              </div>
               
-        </div>
-        <div class="next-back">
-            <div class="page-n">
-                <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group" role="group" aria-label="First group">
-                      <a class="btn btn-secondary" href="{{url_for('exercise_page1')}}" role="button"><</a>
-                      <a class="btn btn-light" href="{{url_for('exercise_page1')}}" role="button">1</a>
-                      <a class="btn btn-danger" href="{{url_for('exercise_page2')}}" role="button">2</a>
-                      <a class="btn btn-light" href="{{url_for('exercise_page3')}}" role="button">3</a>
-                      <a class="btn btn-secondary" href="{{url_for('exercise_page3')}}" role="button">></a>
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <a href="{{url_for('exercise_set5')}}">
+                      <img src="/static/images/กล้ามเนื้อหลัง1.jpg" class="card-img-top" alt="..."></a>
+                      <div class="card-body">
+                        <a href="{{url_for('exercise_set5')}}">
+                        <h5 class="card-title">ออกกำลังกายกล้ามเนื้อหลัง</h5>
+                        <p class="card-text">เเนะนำการออกกำลังกายและบริหารกล้ามเนื้อต้นหลังเพื่อให้ลำตัวเเละบุคลิกของคุณมั่นใจมากขึ้น
+                          โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ
+                        </p>
+                      </a>
+                      </div>
+                    </div>
+                  </div>
+
+                        <!-- ออกกำลังกายกล้ามเเขน -->
+                  <div class="col">
+                    <div class="card">
+                      <a href="{{url_for('exercise_set6')}}">
+                      <img src="/static/images/กล้ามเนื้อเเขน00.jpg" class="card-img-top" alt="..."></a>
+                      <div class="card-body">
+                        <a href="{{url_for('exercise_set6')}}">
+                        <h5 class="card-title">ออกกำลังกายกล้ามเนื้อเเขน</h5>
+                        <p class="card-text">เเนะนำการออกกำลังกายกล้ามเนื้อเเขนที่จะช่วยคุณลดไขมันเเละเพิ่มกล้ามเนื้อ โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ.</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                        <!-- คาร์ดิโอ    -->
+
+                          <!-- ออกกำลังกายเเบบคาร์ดิโอ -->
+                  <div class="col">
+                    <div class="card">
+                      <a href="{{url_for('exercise_set7')}}">
+                      <img src="/static/images/ออกกำลังคา3.jpg" class="card-img-top" alt="...">
+                      </a>
+                      <div class="card-body">
+                        <a href="{{url_for('exercise_set7')}}">
+                        <h5 class="card-title">ท่าออกกำลังกายเเบบคาร์ดิโอ</h5>
+                        <p class="card-text">เเนะนำการออกลังกายเเบบคาร์ดิโอเพื่อให้คุณลดไขมันใต้ผิวหนังทุกส่วนของร่างกาย โดยเหล่าเทรนเนอร์จากYoutubeที่เราได้คัดเลือกมาให้คุณ.
+                        </p></a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div class="card">
+                      <img src="/static/images/exercise_test.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>  
+              </div>
+
+              <div class="next-back">
+                <div class="page-n">
+                    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group" role="group" aria-label="First group">
+      
+                          <a class="btn btn-light" href="{{url_for('exercise_page1')}}" role="button">1</a>
+                          <a class="btn btn-danger" href="{{url_for('exercise_page2')}}" role="button">2</a>
+                          <a class="btn btn-light" href="{{url_for('exercise_page3')}}" role="button">3</a>
+                          
+                        </div>
                     </div>
                 </div>
-            </div>
-
+              </div> 
+                  
         </div>
-    </div>
-    </div>
-    <footer class="footer" style="margin-top: 100px;">
-      <div class="container">
-          <div class="row">
-              <div class="footer-col">
-                  <h4>about</h4>
-                  <ul>
-                      <li class="thaifont" ><a href="https://www.it.kmitl.ac.th/th/" target="_blank">คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</a></li>
-                      <li class="thaifont"><a href="https://www.it.kmitl.ac.th/th/about/travel/" target="_blank">เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520</a></li>
-                  </ul>
-              </div>
-              <div class="footer-col">
-                  <h4>special thank</h4>
-                  <ul>
-                      <li><a href="https://www.si.mahidol.ac.th/" target="_blank">Mahidol</a></li>
-                      <li><a href="https://www.amara-clinic.com/what-is-bmi/" target="_blank">AmaraClinic</a></li>
-                      <li><a href="https://twitter.com/SiPHHospital/status/1154934324132642816?s=20" target="_blank">Image-1</a></li>
-                  </ul>
-              </div>
-              <div class="footer-col">
-                  <h4>email & contact us</h4>
-                  <ul>
-                      <li><a href="https://mail.google.com/" target="_blank">64070039@it.kmitl.ac.th</a></li>
-                      <li><a href="https://mail.google.com/" target="_blank">64070180@it.kmitl.ac.th</a></li>
-                      <li><a href="https://mail.google.com/" target="_blank">64070191@it.kmitl.ac.th</a></li>
-                      <li><a href="https://mail.google.com/" target="_blank">64070220@it.kmitl.ac.th</a></li>
-                   <li><a href="https://mail.google.com/" target="_blank">64070230@it.kmitl.ac.th</a></li>
-                  </ul>
-              </div>
-              <div class="footer-col">
-                  <h4>social</h4>
-                  <div class="social-links">
-                      <a href="https://www.facebook.com/kmitlofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                      <a href="https://twitter.com/kmitlofficial?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
-                      <a href="https://www.instagram.com/kmitlofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-                      
+      </div>
+
+
+      <footer class="footer" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>about</h4>
+                    <ul>
+                        <li class="thaifont" ><a href="https://www.it.kmitl.ac.th/th/" target="_blank">คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</a></li>
+                        <li class="thaifont"><a href="https://www.it.kmitl.ac.th/th/about/travel/" target="_blank">เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>special thank</h4>
+                    <ul>
+                        <li><a href="https://www.si.mahidol.ac.th/" target="_blank">Mahidol</a></li>
+                        <li><a href="https://www.amara-clinic.com/what-is-bmi/" target="_blank">AmaraClinic</a></li>
+                        <li><a href="https://twitter.com/SiPHHospital/status/1154934324132642816?s=20" target="_blank">Image-1</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>email & contact us</h4>
+                    <ul>
+                        <li><a href="https://mail.google.com/" target="_blank">64070039@it.kmitl.ac.th</a></li>
+                        <li><a href="https://mail.google.com/" target="_blank">64070180@it.kmitl.ac.th</a></li>
+                        <li><a href="https://mail.google.com/" target="_blank">64070191@it.kmitl.ac.th</a></li>
+                        <li><a href="https://mail.google.com/" target="_blank">64070220@it.kmitl.ac.th</a></li>
+                    <li><a href="https://mail.google.com/" target="_blank">64070230@it.kmitl.ac.th</a></li>
+                    </ul>
+                </div>
+                  <div class="footer-col">
+                      <h4>social</h4>
+                      <div class="social-links">
+                          <a href="https://www.facebook.com/kmitlofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://twitter.com/kmitlofficial?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a href="https://www.instagram.com/kmitlofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                          
+                      </div>
                   </div>
-              </div>
-          </div>
+            </div>
+        </div>
   </footer>
 </body>
 </html>
