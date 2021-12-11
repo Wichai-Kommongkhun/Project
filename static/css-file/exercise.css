@@ -9,6 +9,7 @@
     width: 100%;
     background-color: white;
     margin: 0% 0 0 0;
+    
 }
 
 nav{
@@ -123,15 +124,15 @@ nav{
 }
 
 .next-back {
-    width: 80%;
+
     height: 12%;
-    margin: 0% 0 0 3.5%;
+    margin: 0% 0 0 10%;
     position: absolute;
 
 }
 
 .page-n {
-    margin: 1% 0 0 70.4%;
+    margin: 10% 0 0 420%;
 }
 
 .page-n a {
