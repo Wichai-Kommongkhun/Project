@@ -201,47 +201,47 @@ def menu_36():
 def menu_37():
     return render_template('food_all/food_menu/menu_37.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/ข้าวคลุกกะปิ")
 def menu_38():
     return render_template('food_all/food_menu/menu_38.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/ไก่ย่างน้ำจิ้มแจ่ว")
 def menu_39():
     return render_template('food_all/food_menu/menu_39.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/ปลานิลย่าง")
 def menu_40():
     return render_template('food_all/food_menu/menu_40.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/คั่วกลิ้ง")
 def menu_41():
     return render_template('food_all/food_menu/menu_41.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/สปาเกตตีซอสมะเขือเทศ")
 def menu_42():
     return render_template('food_all/food_menu/menu_42.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/สปาเกตตีคาโบนารา")
 def menu_43():
     return render_template('food_all/food_menu/menu_43.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/ไข่เจียวใส่ผักวอเตอร์เครส")
 def menu_44():
     return render_template('food_all/food_menu/menu_44.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/ไข่ตุ๋นคลีน")
 def menu_45():
     return render_template('food_all/food_menu/menu_46.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/ยำไข่ต้มคลีน")
 def menu_46():
     return render_template('food_all/food_menu/menu_46.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/ไข่เจียวฟักทองคลีน")
 def menu_47():
     return render_template('food_all/food_menu/menu_47.html')
 
-@app.route("/อกไก่ผัดมันฝรั่ง")
+@app.route("/ไข่ซูเฟล่")
 def menu_48():
     return render_template('food_all/food_menu/menu_48.html')
 
