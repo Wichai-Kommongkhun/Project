@@ -338,7 +338,7 @@ def check():
     return render_template('check_bmi.html', show_bmi=show_bmi , message=message)
 
 
-# search menu ยังทำไม่เสร็จ
+# search menu เสร็จแล้วนะ by Lotto
 @app.route('/Food_search', methods=['POST', 'GET'])
 def search():
     text_search = ''
@@ -388,6 +388,62 @@ def search():
         return render_template('food_all/food_menu/menu_19.html')
     elif search == "ปลาแซลมอนย่างซอสเทอริยากิ":
         return render_template('food_all/food_menu/menu_20.html')
+    elif search == "แกงเขียวหวานอกไก่":
+        return render_template('food_all/food_menu/menu_21.html')
+    elif search == "Gnocchi with Tomato Sauce":
+        return render_template('food_all/food_menu/menu_22.html')
+    elif search == "Tuna Corn Salad":
+        return render_template('food_all/food_menu/menu_23.html')
+    elif search == "ข้าวไข่ข้นข้าวโพด":
+        return render_template('food_all/food_menu/menu_24.html')
+    elif search == "Chicken Panzanella Salad":
+        return render_template('food_all/food_menu/menu_25.html')
+    elif search == "มะเขือเทศผัดไข่":
+        return render_template('food_all/food_menu/menu_26.html')
+    elif search == "แซนวิชไข่ต้มไส้ทะลัก":
+        return render_template('food_all/food_menu/menu_27.html')
+    elif search == "Sour Banked Salmon":
+        return render_template('food_all/food_menu/menu_28.html')
+    elif search == "ไข่อบอะโวคาโด":
+        return render_template('food_all/food_menu/menu_29.html')
+    elif search == "เปาะเปี๊ยะลาบลุยสวน":
+        return render_template('food_all/food_menu/menu_30.html')
+    elif search == "สลัดปลาแซลมอนย่าง":
+        return render_template('food_all/food_menu/menu_31.html')
+    elif search == "Salad Cottage Cheese":
+        return render_template('food_all/food_menu/menu_32.html')
+    elif search == "couscous salad with tofu":
+        return render_template('food_all/food_menu/menu_33.html')
+    elif search == "Acai Bowl":
+        return render_template('food_all/food_menu/menu_34.html')
+    elif search == "Pink Smoothie":
+        return render_template('food_all/food_menu/menu_35.html')
+    elif search == "อกไก่ผัดมันฝรั่ง":
+        return render_template('food_all/food_menu/menu_36.html')
+    elif search == "แซนวิชไข่คน":
+        return render_template('food_all/food_menu/menu_37.html')
+    elif search == "ข้าวคลุกกะปิ":
+        return render_template('food_all/food_menu/menu_38.html')
+    elif search == "ไก่ย่างน้ำจิ้มแจ่ว":
+        return render_template('food_all/food_menu/menu_39.html')
+    elif search == "ปลานิลย่าง":
+        return render_template('food_all/food_menu/menu_40.html')
+    elif search == "คั่วกลิ้ง":
+        return render_template('food_all/food_menu/menu_41.html')
+    elif search == "สปาเกตตีซอสมะเขือเทศ":
+        return render_template('food_all/food_menu/menu_42.html')
+    elif search == "สปาเกตตีคาโบนารา":
+        return render_template('food_all/food_menu/menu_43.html')
+    elif search == "ไข่เจียวใส่ผักวอเตอร์เครส":
+        return render_template('food_all/food_menu/menu_44.html')
+    elif search == "ไข่ตุ๋นคลีน":
+        return render_template('food_all/food_menu/menu_45.html')
+    elif search == "ยำไข่ต้มคลีน":
+        return render_template('food_all/food_menu/menu_46.html')
+    elif search == "ไข่เจียวฟักทองคลีน":
+        return render_template('food_all/food_menu/menu_47.html')
+    elif search == "ไข่ซูเฟล่":
+        return render_template('food_all/food_menu/menu_48.html')
     else:
         text_search = "ไม่พบเมนู " + search
         return render_template('Erorr.html',search=text_search)
