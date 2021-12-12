@@ -238,14 +238,5 @@ nav{
 }
 
 
-@media screen and (max-width: 415px) {
-    .comment form{
-   
-        margin: 5% 0 0 5%;
-        width: 100%;
-    }
-    .title-food h1{
-        font-size: 50px;
-        margin: 0 0 0 5%;
-    }
-}
+
+
