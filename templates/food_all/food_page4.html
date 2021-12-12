@@ -239,9 +239,35 @@
                 </div>
             </div>
 
+            <div  class="comment">
+                <form action="/comment" method="POST">
+                    <label for="floatingTextarea2">ชื่อของคุณ(ไม่บังคับชื่อจริง)</label>
+                    <input class="form-control" type="text" placeholder="ชื่อผู้ใช้" aria-label="default input example" name="name">
+                    <br>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="text"></textarea>
+                        <label for="floatingTextarea2">แสดงความคิดเห็น</label>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label">ไฟล์รูปภาพ</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>  
+                      <button type="submit" class="btn btn-primary">ส่งความคิดเห็น</button>
+                </form>
+
+                <div class="box-comment">
+                    
+                </div>
+               
+            </div>
+
+
+
+
         </div>
     </div>
-    <footer class="footer" style="margin-top: 100px;">
+    <footer class="footer" style="margin: 30% 0 0 0;">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
