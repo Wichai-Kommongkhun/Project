@@ -1,19 +1,36 @@
+import MySQLdb
 from flask import Flask, render_template, request, redirect, url_for, session
-from flask.helpers import flash
+import pymysql
+from flask_mysqldb import MySQL
+from pymysql.cursors import Cursor
+from datetime import datetime
 
 
 
 app = Flask(__name__)
+
+db = pymysql.connect(
+    host="localhost",
+    user="root",
+    passwd="",
+    database="comment"
+)
+
+
 #index
 @app.route('/home')
 def home():
     return render_template('home.html')
 
 
+
+
 #Food pages
 @app.route('/food')
 def food():
+
     return render_template('food_all/food_page1.html')
+
 
 @app.route('/food_page2')
 def food_page2():
@@ -36,6 +53,8 @@ def food_page5():
 
 @app.route("/กระเพาอกไก่")
 def menu_1():
+    
+    
     return render_template('food_all/food_menu/menu_1.html')
 
 @app.route("/แกงจืดตำลึงหมูสับ")
@@ -310,6 +329,19 @@ def search():
         text_search = "ไม่พบเมนู " + search
         return render_template('Erorr.html',search=text_search)
 
+
+@app.route('/comment', methods=['POST','GET'])
+def comment():
+    if request.method=="POST":
+        name = request.form['name']
+        text = request.form['text']
+        date = datetime.today()
+        time = str(date.strftime("%d/%m/%Y %H:%M"))
+        with db.cursor() as cursor:
+            sql = "Insert into `comment` (`time`,`name`,`text`) values(%s,%s,%s)"
+            cursor.execute(sql,(time,name,text))
+            db.commit()
+        return render_template('food_all/food_page1.html')
 if __name__=="__main__":
     app.run(debug=True)
 
