@@ -197,6 +197,54 @@ def menu_35():
 def menu_36():
     return render_template('food_all/food_menu/menu_36.html')
 
+@app.route("/แซนด์วิชไข่คน")
+def menu_37():
+    return render_template('food_all/food_menu/menu_37.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_38():
+    return render_template('food_all/food_menu/menu_38.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_39():
+    return render_template('food_all/food_menu/menu_39.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_40():
+    return render_template('food_all/food_menu/menu_40.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_41():
+    return render_template('food_all/food_menu/menu_41.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_42():
+    return render_template('food_all/food_menu/menu_42.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_43():
+    return render_template('food_all/food_menu/menu_43.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_44():
+    return render_template('food_all/food_menu/menu_44.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_45():
+    return render_template('food_all/food_menu/menu_46.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_46():
+    return render_template('food_all/food_menu/menu_46.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_47():
+    return render_template('food_all/food_menu/menu_47.html')
+
+@app.route("/อกไก่ผัดมันฝรั่ง")
+def menu_48():
+    return render_template('food_all/food_menu/menu_48.html')
+
 
 
 
