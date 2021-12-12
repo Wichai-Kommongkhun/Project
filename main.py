@@ -378,7 +378,11 @@ def search():
         return render_template('Erorr.html',search=text_search)
 
 
-@app.route('/comment', methods=['POST','GET'])
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/comment', methods=['POST','GET']) # page1
 def comment():
     if request.method=="POST":
         name = request.form['name']
