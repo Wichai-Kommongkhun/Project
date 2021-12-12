@@ -136,13 +136,6 @@ nav{
     margin: 0 0 0 50%;
 }
 
-@media screen and (max-width: 415px){
-    .seach {
-        width: 50%;
-    
-        margin: 2% 0 0 5%;
-    }
-}
 
 
 
