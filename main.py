@@ -297,6 +297,21 @@ def exercise_set6():
 def exercise_set7():
     return render_template('exercise_all/exercise_set/exercise_set7.html')
 
+@app.route('/โยคะ')
+def exercise_set8():
+    return render_template('exercise_all/exercise_set/exercise_set8.html')
+
+@app.route('/ว่ายน้ำ')
+def exercise_set9():
+    return render_template('exercise_all/exercise_set/exercise_set9.html')
+
+
+
+
+
+
+
+
 
 @app.route('/check_bmi' , methods=['POST','GET'])
 def check():
