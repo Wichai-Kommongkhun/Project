@@ -9,7 +9,7 @@
      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="
      sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="/static/css-file/home_footer  exercise.css">
+     <link rel="stylesheet" href="/static/css-file/home_footer exercise.css">
     <link rel="stylesheet" href="/static/css-file/menubar exercise.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +26,16 @@
       .card img {
         width: 550px;
         height: 400px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .card img {
+          width: 320px;
+          height: 200px;
+        }
+        .title-exercise h1{
+          font-size: 60px;
+        }
       }
     </style>
 </head>
@@ -130,11 +140,30 @@
                 </div>
               </div> 
                   
+              <div  class="comment">
+                
+                <form action="/comment" method="POST">
+                    <h5>แสดงความคิดเห็นหรือเเนะนำเกี่ยวกับการใช้งานเว็บไซต์</h5>
+                    <label for="floatingTextarea2">ชื่อของคุณ(ไม่บังคับชื่อจริง)</label>
+                    <input class="form-control" type="text" placeholder="ชื่อผู้ใช้" aria-label="default input example" name="name">
+                    <br>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="text"></textarea>
+                        <label for="floatingTextarea2">แสดงความคิดเห็น</label>
+                      </div>
+  
+                      <br>
+                      <button type="submit" class="btn btn-primary">ส่งความคิดเห็น</button>
+                </form>
+               
+            </div> 
+
+
         </div>
       </div>
 
 
-      <footer class="footer" style="margin-top: 100px;">
+      <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">

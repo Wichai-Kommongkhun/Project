@@ -135,6 +135,12 @@ nav{
     margin: 10% 0 0 780%;
 }
 
+@media screen and (max-width: 768px) {
+    .page-n {
+        margin: 10% 0 0 400%;
+    }
+}
+
 .page-n a {
     font-size: 22px;
     border: 1px solid black;
@@ -184,4 +190,46 @@ nav{
     margin: 2% 0 5% 15.5%;
     font-size: 120px;
     font-family: 'Fredoka One', cursive;
+}
+
+
+.comment{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    margin: 0 0 0 0;
+}
+
+.comment form{
+   
+    margin: 5% 0 0 25%;
+    width: 50%;
+}
+
+
+.box-comment{
+    
+    width: 50%;
+    height: 200px;
+    overflow:auto;
+    margin: 3% 0 0% 25%;
+}
+
+.footer{
+    margin: 0% 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .comment{
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        margin: 10% 0 0 0;
+    }   
+
+    .comment form{
+   
+        margin: 5% 0 0 15%;
+        width: 70%;
+    }
 }

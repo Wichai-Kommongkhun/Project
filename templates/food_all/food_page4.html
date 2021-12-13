@@ -31,33 +31,18 @@
         }
 
         @media screen and (max-width: 835px) {
-       
-            .card{
-                width: 50px;
-                height: 190px;
-            }
-            .card img{
-                align-items: center;
-                margin: 0 0 0 17%;
-            }
-            .card img {
-            
-                width: 90px;
-                height: 70px;
-            }
-            .card p {
-                display: none;
-    
-            }
-    
-            .card-body{
-                height: 10px;
-            }
-            
             .title-food h1{
                 font-size: 70px;
+                
             }
             
+        }
+
+        @media screen and (max-width: 300px) {
+            .title-food h1 {
+                font-size: 35px;
+                margin: 5% 0 0 5%;
+            }
         }
         </style>
 </head>
@@ -275,7 +260,7 @@
 
             <div  class="comment">
                 
-                <form action="/comment" method="POST">
+                <form action="/comment3" method="POST">
                     <h5>แสดงความคิดเห็นหรือเเนะนำเกี่ยวกับการใช้งานเว็บไซต์</h5>
                     <label for="floatingTextarea2">ชื่อของคุณ(ไม่บังคับชื่อจริง)</label>
                     <input class="form-control" type="text" placeholder="ชื่อผู้ใช้" aria-label="default input example" name="name">

@@ -122,6 +122,11 @@ nav{
     font-size: 120px;
     font-family: 'Fredoka One', cursive;
 }
+
+
+
+
+
 .seach {
     width: 35%;
 
@@ -137,6 +142,21 @@ nav{
     }
 }
 
+@media screen and (max-width: 360px){
+    .seach {
+        width: 70%;
+    
+        margin: 2% 0 0 5%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .seach {
+        width: 70%;
+    
+        margin: 2% 0 0 5%;
+    }
+}
 
 .list-menu {
     width: 5%;
@@ -170,6 +190,8 @@ nav{
     }
 }
 
+
+
 .page-n a {
     font-size: 22px;
     border: 1px solid black;
@@ -177,8 +199,6 @@ nav{
     
 
 }
-
-
 
 
 .menu {
@@ -236,6 +256,7 @@ nav{
 .footer{
     margin: 0% 0 0 0;
 }
+
 
 
 

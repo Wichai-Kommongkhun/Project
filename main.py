@@ -464,7 +464,54 @@ def comment():
             sql = "Insert into `comment` (`time`,`name`,`text`) values(%s,%s,%s)"
             cursor.execute(sql,(time,name,text))
             db.commit()
-        return render_template('food_all/food_page1.html')
+        return redirect(url_for('food'))
+    
+    
+@app.route('/comment1', methods=['POST','GET']) # page2
+def comment1():
+    if request.method=="POST":
+        name = request.form['name']
+        text = request.form['text']
+        date = datetime.today()
+        time = str(date.strftime("%d/%m/%Y %H:%M"))
+        with db.cursor() as cursor:
+            sql = "Insert into `comment` (`time`,`name`,`text`) values(%s,%s,%s)"
+            cursor.execute(sql,(time,name,text))
+            db.commit()
+        return redirect(url_for('food_page2'))
+
+
+@app.route('/comment2', methods=['POST','GET']) # page2
+def comment2():
+    if request.method=="POST":
+        name = request.form['name']
+        text = request.form['text']
+        date = datetime.today()
+        time = str(date.strftime("%d/%m/%Y %H:%M"))
+        with db.cursor() as cursor:
+            sql = "Insert into `comment` (`time`,`name`,`text`) values(%s,%s,%s)"
+            cursor.execute(sql,(time,name,text))
+            db.commit()
+        return redirect(url_for('food_page3'))
+    
+    
+@app.route('/comment3', methods=['POST','GET']) # page2
+def comment3():
+    if request.method=="POST":
+        name = request.form['name']
+        text = request.form['text']
+        date = datetime.today()
+        time = str(date.strftime("%d/%m/%Y %H:%M"))
+        with db.cursor() as cursor:
+            sql = "Insert into `comment` (`time`,`name`,`text`) values(%s,%s,%s)"
+            cursor.execute(sql,(time,name,text))
+            db.commit()
+        return redirect(url_for('food_page4'))
+    
+
+    
+    
+
 if __name__=="__main__":
     app.run(debug=True)
 

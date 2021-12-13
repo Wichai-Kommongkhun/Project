@@ -109,8 +109,11 @@ ul{
 		margin: 60% 0 0 0;
 		
     }
-
 }
+
+
+
+
 @media screen and (max-width: 415px){
     .footer{
 		background-color: #31333a;
@@ -124,4 +127,28 @@ ul{
 
 }
 
+
+
+@media screen and (max-width: 300px) {
+	.footer{
+		background-color: #31333a;
+		position: absolute;
+		margin-top: 180%;
+    }
+
+	
+
+}
+
+
+@media screen and (max-width: 360px) {
+	.footer{
+		background-color: #31333a;
+		position: absolute;
+		margin-top: 140%;
+    }
+
+	
+
+}
 
