@@ -1,0 +1,177 @@
+.main_info1 {
+    width: 100%;
+    height: 400px;
+    background: #333;
+}
+.main_info1_area {
+    color: white;
+}
+.main_info1_area {
+    margin-top: 100px;
+}
+.main_info1_text {
+    text-align: center;
+    width: 450;
+}
+.main_info1_text h1{
+    font-size: 50px;
+}
+.main_info1_text p{
+    font-size: 18px;
+}
+.main_info1_area h1 {
+    margin: 0;
+}
+ 
+
+.main_info2 {
+    width: 100%;
+    height: 400px;
+    background: white;
+}
+.main_info2_area {
+    color: #333;
+}
+.main_info2_area {
+    margin-top: 100px;
+}
+.main_info2_text {
+    text-align: center;
+    width: 450;
+}
+.main_info2_text h1{
+    font-size: 50px;
+}
+.main_info2_text p{
+    font-size: 18px;
+}
+.main_info2_area h1 {
+    margin: 0;
+}
+
+
+.main_info3 {
+    width: 100%;
+    height: 400px;
+    background: #333;
+}
+.main_info3_area {
+    color: white;
+}
+.main_info3_area {
+    margin-top: 100px;
+}
+.main_info3_text {
+    text-align: center;
+    width: 450;
+}
+.main_info3_text h1{
+    font-size: 50px;
+}
+.main_info3_text p{
+    font-size: 18px;
+}
+.main_info3_area h1 {
+    margin: 0;
+}
+
+.info1 {
+    width: 100%;
+    height: 50px;
+    background: white;
+}
+.info1_area {
+    color: #333;
+}
+.info1_text h2{
+    font-size: 18px;
+}
+.info1_text {
+    text-align: left;
+    width: 450;
+
+}
+
+.info2 {
+    width: 100%;
+    height: 50px;
+    background: white;
+}
+.info2_area {
+    color: #333;
+}
+.info2_text h2{
+    font-size: 18px;
+}
+.info2_text {
+    text-align: left;
+    width: 450;
+}
+
+.info3 {
+    width: 100%;
+    height: 50px;
+    background: white;
+}
+.info3_area {
+    color: #333;
+}
+.info3_text h2{
+    font-size: 18px;
+}
+.info3_text {
+    text-align: left;
+    width: 450;
+}
+
+
+.info4 {
+    width: 100%;
+    height: 50px;
+    background: white;
+}
+.info4_area {
+    color: #333;
+}
+.info4_text h2{
+    font-size: 18px;
+}
+.info4_text {
+    text-align: left;
+    width: 450;
+}
+
+
+.info5 {
+    width: 100%;
+    height: 50px;
+    background: white;
+}
+.info5_area {
+    color: #333;
+}
+.info5_text h2{
+    font-size: 18px;
+}
+.info5_text {
+    text-align: left;
+    width: 450;
+}
+
+.img {
+    max-height: 50px;
+    max-width: 50px;
+    float: left;
+
+
+}
+footer {
+    background: rgb(47, 153, 72);
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+footer p {
+    margin: 0%;
+}
