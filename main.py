@@ -348,30 +348,30 @@ def search():
         text_search = 'กรุณาใส่ชื่ออาหาร' 
         return render_template('Erorr.html',search=text_search)
     
-    if search == "กระเพราอกไก่" or search == "กระเพรา":
-        return render_template('food_all/food_menu/menu_1.html')
+    if search == "กระเพราอกไก่":
+        return redirect(url_for('menu_1'))
     elif search == "แกงจืดตำลึงหมูสับ" or search == "ตำลึงหมูสับ":
-        return render_template('food_all/food_menu/menu_2.html')
+        return redirect(url_for('menu_2'))
     elif search == "ต้มข่าอกไก่":
-        return render_template('food_all/food_menu/menu_3.html')
+        return redirect(url_for('menu_3'))
     elif search == "แกงเหลือง":
-        return render_template('food_all/food_menu/menu_4.html')
+        return redirect(url_for('menu_4'))
     elif search == "ซุบหน่อไม้":
-        return render_template('food_all/food_menu/menu_5.html')
+        return redirect(url_for('menu_5'))
     elif search == "แกงเลียง":
-        return render_template('food_all/food_menu/menu_6.html')
+        return redirect(url_for('menu_6'))
     elif search == "ส้มตำผลไม้":
-        return render_template('food_all/food_menu/menu_7.html')
+        return redirect(url_for('menu_7'))
     elif search == "ห่อหมกปลาดอรี่":
-        return render_template('food_all/food_menu/menu_8.html')
+        return redirect(url_for('menu_8'))
     elif search == "น้ำพริกอ่องอกไก่":
-        return render_template('food_all/food_menu/menu_9.html')
+        return redirect(url_for('menu_9'))
     elif search == "อกไก่คั่วพริกแกง":
-        return render_template('food_all/food_menu/menu_10.html')
+        return redirect(url_for('menu_10'))
     elif search == "ต้มยำเห็ดน้ำใส":
-        return render_template('food_all/food_menu/menu_11.html')
+        return redirect(url_for('menu_11'))
     elif search == "ผัดถั่วงอกเต้าหู้":
-        return render_template('food_all/food_menu/menu_12.html')
+        return redirect(url_for('menu_12'))
     elif search == "แกงจืดมะระยัดไส้":
         return render_template('food_all/food_menu/menu_13.html')
     elif search == "ต้มเลือดหมู":
@@ -445,11 +445,15 @@ def search():
     elif search == "ไข่ซูเฟล่":
         return render_template('food_all/food_menu/menu_48.html')
     elif search == 'อกไก่' or search == 'ไก่' or 'ไก่' in search:
-        return render_template('food_all/food_search1.html')
+        return redirect(url_for('search_1'))
     else:
         text_search = "ไม่พบเมนู " + search
         return render_template('Erorr.html',search=text_search)
 
+
+@app.route('/ไก่/อกไก่')
+def search_1():
+    return render_template('food_all/food_search1.html')
 
 @app.route('/about')
 def about():

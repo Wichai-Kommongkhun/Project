@@ -68,8 +68,8 @@
             <div class="title-food">
                 <h1>FOOD PSIT</h1>
                 <div class="seach">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="ใส่ชื่ออาหาร" aria-label="Search">
+                    <form class="d-flex" method="POST" action="/Food_search">
+                        <input class="form-control me-2" type="search" placeholder="ใส่ชื่ออาหาร" aria-label="Search" name="search">
                         <button class="btn btn-outline-success" type="submit">ค้นหา</button>
                       </form>
                 </div>
@@ -254,7 +254,7 @@
 
             <div  class="comment">
                 
-                <form action="/comment" method="POST">
+                <form action="/comment2" method="POST">
                     <h5>แสดงความคิดเห็นหรือเเนะนำเกี่ยวกับการใช้งานเว็บไซต์</h5>
                     <label for="floatingTextarea2">ชื่อของคุณ(ไม่บังคับชื่อจริง)</label>
                     <input class="form-control" type="text" placeholder="ชื่อผู้ใช้" aria-label="default input example" name="name">
