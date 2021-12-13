@@ -22,12 +22,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>เมนูไก่</title>
+    <title>เมนูปลา</title>
     <style>
         .card img {
             
             width: 286px;
-            height: 280px;
+            height: 250px;
         }
 
         @media screen and (max-width: 835px) {
@@ -80,51 +80,14 @@
             </div>
             <div class="row">
 
-                <div class="col-sm-4"> 
-                    <br>
-                    <div class="card" style="width: 18rem;">
-                        <img src="/static/images/กระเพราอกไก่.jpeg" class="card-img-top"  alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">ข้าวกระเพราะอกไก่</h5>
-                        <p class="card-text">อาหารยอดนิยมของคนไทยที่หาซื้อได้ทุกที่ก็สามารถนำมาปรุ่งเป็นเมนูอาหารคลีนได้ไม่ยาก..</p>
-                        <a href="{{url_for('menu_1')}}" class="btn btn-primary">วิธีทำ</a>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="col-sm-4">
                     <br>
                     <div class="card" style="width: 18rem;">
-                        <img src="/static/images/ต้มข่าไก่2.jpg" class="card-img-top"   alt="...">
+                        <img src="/static/images/ห่อหมกปลาดอรี่.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">ต้มข่าอกไก่</h5>
-                        <p class="card-text">ต้มข่าไก่ เป็นอาหารที่นิยมมาช้านานเป็นเมนูที่คนไทยรู้จักดี และทำได้ง่ายวัตุดิบมีราคาถูก..</p>
-                        <a href="{{url_for('menu_3')}}" class="btn btn-primary">วิธีทำ</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <br>
-                    <div class="card" style="width: 18rem;">
-                        <img src="/static/images/น้ำพริกอ่องอกไก่.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">น้ำพริกอ่องอกไก่</h5>
-                        <p class="card-text">น้ำพริกอ่องเป็นน้ำพริกซึ่งนิยมรับประทานกัน ในภาคเหนือของประเทศไทยเป็นอาหารที่มีสมุนไพร..</p>
-                        <a href="{{url_for('menu_9')}}" class="btn btn-primary">วิธีทำ</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <br>
-                    <div class="card" style="width: 18rem;">
-                        
-                        <img src="/static/images/อกไก่คั่วพริกแกง2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">อกไก่คั่วพริกแกง</h5>
-                        <p class="card-text">อกไก่คั่วพริกแกง อาหารไทยที่ใช้พริกแกง พริกแกงคือส่วนหนึ่งของอาหารหลากหลายชนิดเป็นที่นิยม..</p>
-                        <a href="{{url_for('menu_10')}}" class="btn btn-primary">วิธีทำ</a>
+                        <h5 class="card-title">ห่อหมกปลาดอรี่</h5>
+                        <p class="card-text">ห่อหมกปลาดอรี่ เป็นอาหารพื้นบ้านที่ เราสามารถทำแบบคลีนได้แต่ก็อร่อยเหมือนเดิม และมีราคาที่ถูก..</p>
+                        <a href="{{url_for('menu_8')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -132,11 +95,11 @@
                 <div class="col-md-4">
                     <br>
                     <div class="card" style="width: 18rem;">
-                        <img src="/static/images/แกงเขียวหวานอกไก่3.jpg" class="card-img-top" alt="...">
+                        <img src="/static/images/ยำปลากระป๋อง.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">แกงเขียวหวานอกไก่</h5>
-                        <p class="card-text">แกงเขียวหวานอกไก่ อาหารไทยที่แสนอร่อย แกงเขียวหวานอกไก่คือส่วนหนึ่งของอาหารหลากหลายชนิด..</p>
-                        <a href="{{url_for('menu_21')}}" class="btn btn-primary">วิธีทำ</a>
+                        <h5 class="card-title">ยำปลากระป๋อง</h5>
+                        <p class="card-text">อาหารจานนี้ให้โปรตีนร้อยละ 22 ของปริมาณที่แนะนำให้กินใน 1 วันและให้ไขมันน้อยมาก..</p>
+                        <a href="{{url_for('menu_18')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
@@ -144,20 +107,42 @@
                 <div class="col-md-4">
                     <br>
                     <div class="card" style="width: 18rem;">
-                        <img src="/static/images/อกไก่ผัดมันฝรั่ง.jpg" class="card-img-top" alt="...">
+                        <img src="/static/images/ปลาแซลมอนย่างซอสเทอริยากิ2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">อกไก่ผัดมันฝรั่ง</h5>
-                        <p class="card-text">อาหารที่ให้พลังงานไม่มากแต่อิ่มท้อง สามารถหาวัตถุดิบได้ทั่วไปอร่อยกินง่าย..</p>
-                        <a href="{{url_for('menu_36')}}" class="btn btn-primary">วิธีทำ</a>
+                        <h5 class="card-title">ปลาแซลมอนย่างซอสเทอริยากิ</h5>
+                        <p class="card-text">ปลาแซลมอน เป็นแหล่งของวิตามินบี ซึ่งวิตามินบี ดีต่อสุขภาพหัวใจและสมอง และมีกรด..</p>
+                        <a href="{{url_for('menu_20')}}" class="btn btn-primary">วิธีทำ</a>
                         </div>
                     </div>
                 </div>
 
-               
+                <div class="col-md-4">
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/static/images/Tuna Corn Salad2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Tuna Corn Salad</h5>
+                        <p class="card-text">Tuna Corn Salad อาหารที่หลายคนอาจเคยกินจาก KFC ที่มาในเซต ความอร่อย..</p>
+                        <a href="{{url_for('menu_23')}}" class="btn btn-primary">วิธีทำ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/static/images/ปลานิลย่าง.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">ปลานิลย่าง</h5>
+                        <p class="card-text">ปลานิลย่าง ใครหลายคนรู้จัก กินคู่กับน้ำจิ้มซีฟู้ดแสนอร่อย พลังงานไม่เยอะ..</p>
+                        <a href="{{url_for('menu_40')}}" class="btn btn-primary">วิธีทำ</a>
+                        </div>
+                    </div>
+                </div>
     
                 
             </div>
-        </div>
+            
 
             <div  class="comment">
                 
@@ -170,6 +155,7 @@
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="text"></textarea>
                         <label for="floatingTextarea2">แสดงความคิดเห็น</label>
                       </div>
+                      
 
                       <br>
                       <button type="submit" class="btn btn-primary">ส่งความคิดเห็น</button>
@@ -184,8 +170,8 @@
 
 
 
-        </div>
-    
+        
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="row">
