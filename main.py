@@ -444,6 +444,8 @@ def search():
         return render_template('food_all/food_menu/menu_47.html')
     elif search == "ไข่ซูเฟล่":
         return render_template('food_all/food_menu/menu_48.html')
+    elif search == 'อกไก่' or search == 'ไก่' or 'ไก่' in search:
+        return render_template('food_all/food_search1.html')
     else:
         text_search = "ไม่พบเมนู " + search
         return render_template('Erorr.html',search=text_search)
